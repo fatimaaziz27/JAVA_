@@ -1,4 +1,3 @@
-import java.util.*;
 // Output cases:
 
 // Welcome to Python Bank!
@@ -35,16 +34,13 @@ import java.util.*;
 
 // Choose an option:
 
+import java.util.*;
 
-
-
-
-
-
-
-class BANK{
+class java_main{
     public static void main(String[] args){
-        
+        bank b1 = new bank();
+        b1.login();
+        b1.sign_up();
     }
 }
 class bank{
