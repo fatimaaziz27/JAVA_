@@ -135,7 +135,6 @@ class bank{
             System.out.println("Logout successful!");
             break;
         }
-
         }
     }
 }
