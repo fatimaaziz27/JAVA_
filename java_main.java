@@ -1,5 +1,4 @@
 // Output cases:
-
 // Welcome to Python Bank!
 
 // Signup
@@ -32,7 +31,6 @@
 // Transfer Money
 // Logout
 
-// Choose an option:
 import java.util.*;
 
 class java_main{
