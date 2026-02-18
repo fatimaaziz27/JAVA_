@@ -121,7 +121,7 @@ class bank{
                 acc.display_info();
                 break;
             case 4:
-                System.out.println("Transaction History!");
+                acc.transfer_money();
                 break;
             case 5:
                 System.out.println("Transfer Money");
@@ -153,6 +153,7 @@ class account extends bank{
         this.password = password;
         this.user_name = user_name;
     }
+
     void display_info(){
         System.out.println("Balance: "+this.balance+
                 "\nAccount Number: "+this.account_number+
@@ -160,12 +161,14 @@ class account extends bank{
                 "\nPassword: "+this.password+
                 "\nName: "+this.user_name);
     }
+
     void deposit(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter deposit amount:");
         int am = sc.nextInt();
         this.balance+=am;
     }
+
     void withdraw(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the amount you want to deposit:");
@@ -175,6 +178,7 @@ class account extends bank{
             System.out.println("Withdraw complete");
         }
     }
+
     void transfer_money(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the ammount you want to tansfer: ");
