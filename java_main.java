@@ -98,8 +98,13 @@ class bank{
         if (acc.details.containsKey(name) == true){
             System.out.println("Login Successful!");
 
-            System.out.println("Banking Menu:\n" + 
-" Deposit Money\n" + "Withdraw Money\n" +" Check Balance\n" +" Transaction History !\n" + " Transfer Money\n" +"Logout\n");
+            System.out.println("Banking Menu:\n" +
+            "1. Deposit Money\n" +
+            "2. Withdraw Money\n" +
+            "3. Check Balance\n" +
+            "4. Transaction History !\n" +
+            "5. Transfer Money\n" +
+            "6. Logout\n");
         }
     }
 }
@@ -140,3 +145,6 @@ class account extends bank{
         }
     }
 }
+
+
+
