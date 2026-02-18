@@ -185,7 +185,7 @@ class account extends bank{
             System.out.println("Transfered!");
         }
         else{
-            System.out.println("insuffucient ");
+            System.out.println("Insufficient Funds");
         }
     }
 }
