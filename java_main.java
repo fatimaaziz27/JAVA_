@@ -32,6 +32,7 @@
 // Logout
 
 import java.util.*;
+import java.time.*;
 
 class java_main{
     public static void main(String[] args){
@@ -114,6 +115,10 @@ class bank{
                 break;
             case 2:
                 acc.withdraw();
+
+                LocalDate myObj = LocalDate.now();
+                System.out.println(myObj);
+
                 break;
             case 3:
                 acc.display_info();
@@ -122,7 +127,7 @@ class bank{
                 acc.transfer_money();
                 break;
             case 5:
-                System.out.println("Transfer Money");
+                System.out.println("Transfer Money"); // incomplete
                 break;
         }
         
@@ -169,9 +174,10 @@ class account extends bank{
 
     void withdraw(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the amount you want to deposit:");
+        System.out.println("Enter the amount you want to withdraw:");
         int am = sc.nextInt();
-        if (am<=balance){
+
+                if (am<=balance){
             this.balance-=am;
             System.out.println("Withdraw complete");
         }
@@ -189,6 +195,13 @@ class account extends bank{
         else{
             System.out.println("Insufficient Funds");
         }
+    }
+
+    void transaction_time(){
+        
+        LocalDate myObj = LocalDate.now();
+        String tran_t = ("-------" + myObj);   // incomplete
+        
     }
 }
 
