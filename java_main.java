@@ -81,6 +81,9 @@ class bank{
         account acc = details.get(pin);
         if (acc.details.containsKey(pin) == true){
             System.out.println("Login Successful!");
+
+            System.out.println("Banking Menu:\n" + 
+" Deposit Money\n" + "Withdraw Money\n" +" Check Balance\n" +" Transaction History !\n" + " Transfer Money\n" +"Logout\n");
         }
     }
 }
