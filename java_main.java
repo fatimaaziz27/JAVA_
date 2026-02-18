@@ -172,7 +172,20 @@ class account extends bank{
         int am = sc.nextInt();
         if (am<=balance){
             this.balance-=am;
-            System.out.println("-------");
+            System.out.println("Withdraw complete");
+        }
+    }
+    void transfer_money(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the ammount you want to tansfer: ");
+        Integer amount = sc.nextInt();
+
+        if (amount<=balance){
+            this.balance-=amount;
+            System.out.println("Transfered!");
+        }
+        else{
+            System.out.println("insuffucient ");
         }
     }
 }
