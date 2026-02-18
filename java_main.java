@@ -51,7 +51,7 @@ class java_main{
                 b1.login();
                 break;
         }
-        Scanner
+        Scanner choice = new Scanner(System.in);
         System.out.println("Do you want to continue (yes/no)?");
         if (op.equals("No")){
             break;
@@ -97,17 +97,49 @@ class bank{
         account acc = details.get(name);
         if (acc.details.containsKey(name) == true){
             System.out.println("Login Successful!");
+        }
 
+        while (true){
             System.out.println("Banking Menu:\n" +
             "1. Deposit Money\n" +
             "2. Withdraw Money\n" +
             "3. Check Balance\n" +
             "4. Transaction History !\n" +
-            "5. Transfer Money\n" +
-            "6. Logout\n");
+            "5. Transfer Money");
+
+        System.out.println("Enter your choice: ");
+        Integer choice = sc.nextInt();
+        
+        switch(choice){
+            case 1:
+                acc.deposit();
+                break;
+            case 2:
+                acc.withdraw();
+                break;
+            case 3:
+                acc.display_info();
+                break;
+            case 4:
+                System.out.println("Transaction History!");
+                break;
+            case 5:
+                System.out.println("Transfer Money");
+                break;
+        }
+        
+        System.out.println("Do you want to Logout (yes/no)?");
+        String exit = sc.nextLine();
+
+        if (exit.equals("yes")){
+            System.out.println("Logout successful!");
+            break;
+        }
+
         }
     }
 }
+
 class account extends bank{
     Integer account_number;
     String user_name;
