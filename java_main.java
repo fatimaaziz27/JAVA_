@@ -42,19 +42,19 @@ class java_main{
             Scanner sc = new Scanner(System.in);
             System.out.println("Choose an option");
             Integer op = sc.nextInt();
-        switch(op){
-            case 1:
-                b1.sign_up();
+            switch(op){
+                case 1:
+                    b1.sign_up();
+                    break;
+                case 2:
+                    b1.login();
+                    break;
+            }
+            Scanner choice = new Scanner(System.in);
+            System.out.println("Do you want to continue (yes/no)?");
+            if (op.equals("No")){
                 break;
-            case 2:
-                b1.login();
-                break;
-        }
-        Scanner choice = new Scanner(System.in);
-        System.out.println("Do you want to continue (yes/no)?");
-        if (op.equals("No")){
-            break;
-        }
+            }
         }
     }
 }
@@ -100,44 +100,41 @@ class bank{
 
         while (true){
             System.out.println("Banking Menu:\n" +
-            "1. Deposit Money\n" +
-            "2. Withdraw Money\n" +
-            "3. Check Balance\n" +
-            "4. Transaction History !\n" +
-            "5. Transfer Money");
+                    "1. Deposit Money\n" +
+                    "2. Withdraw Money\n" +
+                    "3. Check Balance\n" +
+                    "4. Transaction History !\n" +
+                    "5. Transfer Money");
 
-        System.out.println("Enter your choice: ");
-        Integer choice = sc.nextInt();
-        
-        switch(choice){
-            case 1:
-                acc.deposit();
-                break;
-            case 2:
-                acc.withdraw();
+            System.out.println("Enter your choice: ");
+            Integer choice = sc.nextInt();
 
-                LocalDate myObj = LocalDate.now();
-                System.out.println(myObj);
+            switch(choice){
+                case 1:
+                    acc.deposit();
+                    break;
+                case 2:
+                    acc.withdraw();
+                    break;
+                case 3:
+                    acc.display_info();
+                    break;
+                case 4:
+                    System.out.println("Transfer History");
+                    break;
+                case 5:
+                    acc.transfer_money();
 
-                break;
-            case 3:
-                acc.display_info();
-                break;
-            case 4:
-                acc.transfer_money();
-                break;
-            case 5:
-                System.out.println("Transfer Money"); // incomplete
-                break;
-        }
-        
-        System.out.println("Do you want to Logout (yes/no)?");
-        String exit = sc.nextLine();
+                    break;
+            }
 
-        if (exit.equals("yes")){
-            System.out.println("Logout successful!");
-            break;
-        }
+            System.out.println("Do you want to Logout (yes/no)?");
+            String exit = sc.nextLine();
+
+            if (exit.equals("yes")){
+                System.out.println("Logout successful!");
+                break;
+            }
         }
     }
 }
@@ -177,7 +174,7 @@ class account extends bank{
         System.out.println("Enter the amount you want to withdraw:");
         int am = sc.nextInt();
 
-                if (am<=balance){
+        if (am<=balance){
             this.balance-=am;
             System.out.println("Withdraw complete");
         }
@@ -196,15 +193,4 @@ class account extends bank{
             System.out.println("Insufficient Funds");
         }
     }
-
-    void transaction_time(){
-        
-        LocalDate myObj = LocalDate.now();
-        String tran_t = ("-------" + myObj);   // incomplete
-        
-    }
 }
-
-
-
-
