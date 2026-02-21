@@ -123,8 +123,16 @@ class bank{
                     System.out.println("Transfer History");
                     break;
                 case 5:
+                    Scanner sc = new Scanner (System.in);
+                    System.out.println("Enter account name: ");
+                    String acc_name = sc.nextLine();
+                    if (acc.details.containsKey(acc_name) == true){
                     acc.transfer_money();
-
+                    }
+                    else{
+                        System.out.println("Account not available.
+                        ");
+                    }
                     break;
             }
 
@@ -180,6 +188,8 @@ class account extends bank{
         }
     }
 
+// Icomplete ----->
+
     void transfer_money(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the ammount you want to tansfer: ");
@@ -187,10 +197,18 @@ class account extends bank{
 
         if (amount<=balance){
             this.balance-=amount;
+
             System.out.println("Transfered!");
         }
         else{
             System.out.println("Insufficient Funds");
+
+            // Scanner sc = new Scanner (System.in);
+            //         System.out.println("Login Successful!");
+            //         String acc_name = sc.nextLine();
+            //         if (acc.details.containsKey(acc_name) == true){
+            //         acc.transfer_money();
+        
         }
     }
 }
