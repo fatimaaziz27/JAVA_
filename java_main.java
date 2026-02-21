@@ -203,8 +203,6 @@ class account extends bank{
         else{
             System.out.println("Insufficient Funds");
 
-            // Scanner sc = new Scanner (System.in);
-            //         System.out.println("Login Successful!");
             //         String acc_name = sc.nextLine();
             //         if (acc.details.containsKey(acc_name) == true){
             //         acc.transfer_money();
