@@ -53,7 +53,8 @@ class java_main{
             }
             Scanner choice = new Scanner(System.in);
             System.out.println("Do you want to continue (yes/no)?");
-            if (op.equals("No")){
+            String o = choice.nextLine();
+            if (o.equals("No")){
                 break;
             }
         }
@@ -205,7 +206,7 @@ class account extends bank{
     public String getPassword(){
         return password;
     }
-    public String getPIN(){
+    public Integer getPIN(){
         return PIN;
     }
 
