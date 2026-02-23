@@ -61,7 +61,7 @@ class java_main{
     }
 }
 class bank{
-    HashMap<String,account> details =new HashMap<>();
+    HashMap<String,account> details = new HashMap<>();
     void sign_up(){
 
         Scanner sc = new Scanner(System.in);
