@@ -116,33 +116,33 @@ class booking_system{
 }
 //  1. View Bus Schedules method
     void view_buses_Schedules(){
-
-        // Incomplete --------->
-
         System.out.println("--- Available Bus Schedules ---"
-                +"ID: 1 | Route: north nazimabad - power house | Time: 09:00 AM | Fare: 500 | Seats Left: 30"
-                +"ID: 2 | Route: kda - gulshan | Time: 12:00 PM | Fare: 700 | Seats Left: 30"
-                +"ID: 3 | Route: ayesha manzil - bahria | Time: 05:00 PM | Fare: 600 | Seats Left: 30");
+                +"ID: 1 | Route: north nazimabad - power house | Time: 09:00 AM | Fare: 500 | Seats Left: "+this.seats
+                +"ID: 2 | Route: kda - gulshan | Time: 12:00 PM | Fare: 700 | Seats Left: "+this.seats
+                +"ID: 3 | Route: ayesha manzil - bahria | Time: 05:00 PM | Fare: 600 | Seats Left: "+this.seats);
 
     }
-
-//  2. Book Ticket
-
-class ticket_booking(){
-
+//  2. Book Ticket method
+    void ticket_booking(){
+        
 // Enter Bus ID to book: 2
 // Enter your name: yusra
 // Enter number of seats: 3
 // Booking successful! Total Fare: 2100
-
         Scanner sc = new Scanner (System.in);
-        System.out.println("Enter Schedules ID: ");
+
+        System.out.println("Enter Bus ID: ");
         Integer booking_id = sc.nextInt();
 
+        sc.nextLine();
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
 
-        data.put(cus_name,new bus_data(cus_name,booking_id));
+        System.out.println("Enter number of seats: ");
+        Integer seat_num = sc.nextInt();
+
+        if ()
+
     }
 
 //  3. Cancel Booking
