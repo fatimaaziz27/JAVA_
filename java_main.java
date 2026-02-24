@@ -182,6 +182,7 @@ class booking_system extends data{
         else{
             System.out.println("Invalid ID");
         }
+
         System.out.println();
         System.out.println(" ======  Your booking details  ======\n"
         +"ID: "+ booking_id
@@ -194,18 +195,23 @@ class booking_system extends data{
 
 //  3. Cancel Booking
 
-class cancel_booking(){
+    void cancel_booking(){
 
 // Enter your name to cancel booking: yusra
 // Booking cancelled successfully!
 
+    data d1 = details.get(customer_name);
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
-        if (data.containsKey(cus_name) == true){
-            data.remove(cus_name);
-        }
+
+    if (details.containsKey(cus_name)){
+        details.remove(customer_name);
+
     }
+
+
+
 
 //  4. View My Bookings
 
