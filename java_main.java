@@ -60,44 +60,46 @@ class main{
 
 // === Code Execution Successful ===
 
-//     public static void main(String[] args){
 
-//         methods m1 = new methods ();
 
-//         //  Enter your choice:
+    public static void main(String[] args){
 
-//         while (true) {
-//             System.out.println("1. View Bus Schedules\n"
-//                     +"2. Book Ticket"
-//                     +"\n3. Cancel Booking"
-//                     +"\n4. View My Bookings");
+        methods m1 = new methods ();
 
-//             Scanner sc = new Scanner(System.in);
-//             System.out.println("Choose an option");
-//             Integer op = sc.nextInt();
-//             switch(op){
-//                 case 1:
+        //  Enter your choice:
 
-//                     break;
-//                 case 2:
+        while (true) {
+            System.out.println("1. View Bus Schedules\n"
+                    +"2. Book Ticket"
+                    +"\n3. Cancel Booking"
+                    +"\n4. View My Bookings");
 
-//                     break;
-//                 case 3:
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Choose an option");
+            Integer op = sc.nextInt();
+            switch(op){
+                case 1:
 
-//                     break;
-//                 case 4:
+                    break;
+                case 2:
 
-//                     break;
-//             }
-//             Scanner choice = new Scanner(System.in);
-//             System.out.println("Do you want to continue (yes/no)?");
-//             if (op.equals("No")){
-//                 System.out.print("====== Exiting Bus Ticket Booking System ======");
-//                 break;
-//             }
-//         }
-//     }
-// }
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+            }
+            Scanner choice = new Scanner(System.in);
+            System.out.println("Do you want to continue (yes/no)?");
+            if (op.equals("No")){
+                System.out.print("====== Exiting Bus Ticket Booking System ======");
+                break;
+            }
+        }
+    }
+}
 
 
 class data{
@@ -222,10 +224,15 @@ class booking_system extends data{
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
+        System.out.println(" ======  Your booking details  ======\n"
+        +" | Name: "+ cus_name
+        +" | Route: "+ this.route
+        +" | Time: "+ this.time
+        +" | Seats: "+ this.seats
+        +" | Fare: "+ this.total_fare);
         
 }
 
-}
 }
 
 // create a method for route:
