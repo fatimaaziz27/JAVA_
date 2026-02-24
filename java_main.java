@@ -141,7 +141,9 @@ class booking_system{
         System.out.println("Enter number of seats: ");
         Integer seat_num = sc.nextInt();
 
-        if ()
+        if (this.seats<=seat_num){
+            
+        }
 
     }
 
