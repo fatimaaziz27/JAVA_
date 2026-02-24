@@ -32,10 +32,43 @@
 // Transfer Money
 // Logout
 
+// Output cases:
+// Welcome to Python Bank!
+
+// Signup
+// Login
+// Exit
+// Choose an option:
+
+// if Choose an option: 1
+
+// Enter Username:
+// Enter Password:
+// Set a 4-digit PIN:
+// Account Created Successfully!
+
+// Signup
+// login
+// Exit
+// Choose an option:
+
+// if Choose an option: 2
+// Enter Username:
+// Enter Password:
+// Login Successful!
+
+// Banking Menu:
+// Deposit Money
+// Withdraw Money
+// Check Balance
+// Transaction History !
+// Transfer Money
+// Logout
+
 import java.util.*;
 import java.time.*;
 
-class java_main{
+class main{
     public static void main(String[] args){
         bank b1 = new bank();
         while (true) {
@@ -77,7 +110,7 @@ class bank{
         System.out.println("Set a 4-digit PIN:");
         int pin = sc.nextInt();
 
-        if (pin >= 0000 && pin > 9999 ){
+        if (pin >= 0000 && pin <= 9999 ){
             System.out.println("---------");
         }
 
@@ -129,7 +162,7 @@ class bank{
                     System.out.println("Transfer History");
                     break;
                 case 5:
-                    
+                    sc.nextLine();
                     System.out.println("Enter account name: ");
                     String acc_name = sc.nextLine();
                     account acc_n = details.get(acc_name);
@@ -140,7 +173,7 @@ class bank{
                     }
                     break;
             }
-
+            sc.nextLine();
             System.out.println("Do you want to Logout (yes/no)?");
             String exit = sc.nextLine();
 
@@ -168,11 +201,9 @@ class account extends bank{
     }
 
     void display_info(){
-        System.out.println("Balance: "+this.balance+
-                "\nAccount Number: "+this.account_number+
-                "\nPIN: "+this.PIN +
-                "\nPassword: "+this.password+
-                "\nName: "+this.user_name);
+        System.out.println("\nName: "+this.user_name+
+                "Balance: "+this.balance+
+                "\nAccount Number: "+this.account_number);
     }
 
     void deposit(int amm){
@@ -193,7 +224,7 @@ class account extends bank{
         if (amount<=balance){
             this.withdraw(amount);
             acc_reciever.deposit(amount);
-            
+
             System.out.println("Transfered: "+amount+"to "+acc_reciever.getuser_name());
         }
         else{
