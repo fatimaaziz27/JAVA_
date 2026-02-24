@@ -167,13 +167,22 @@ class booking_system extends data{
         }
 
         if (booking_id == 1){
-
+            
+            int f1 = 500*seat_num;
+            this.total_fare+=f1;
+        
         }
         else if(booking_id == 2){
+            
+            int f2 = 700*seat_num;
+            this.total_fare+=f2;
 
         }
         else if(booking_id == 3){
-            
+
+            int f3 = 700*seat_num;
+            this.total_fare+=f3;
+
         }
     }
 
