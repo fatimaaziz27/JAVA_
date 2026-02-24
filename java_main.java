@@ -222,9 +222,15 @@ class booking_system extends data{
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
-        if (data.containsKey(cus_name) == true){
-            System.out.println("hehe");
-        }
+        
 }
 
 }
+}
+
+// create a method for route:
+
+// for route we can add a method with if/else
+// if id is 1st then this route will be displayed
+// and if id is 2nd then this route will be displayed
+// and then else for 3rd route
