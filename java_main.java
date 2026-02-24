@@ -77,16 +77,16 @@ class main{
             Integer op = sc.nextInt();
             switch(op){
                 case 1:
-                    
+
                     break;
                 case 2:
-                    
+
                     break;
                 case 3:
-                    
+
                     break;
                 case 4:
-                    
+
                     break;
             }
             Scanner choice = new Scanner(System.in);
@@ -99,36 +99,23 @@ class main{
     }
 }
 
-class bus_data{
-
-    HashMap<String,methods> data = new HashMap<>();
-
-}
-
-class methods extends bus_data {
-
+class booking_system{
     //  Attributes ------>
-
     String customer_name;
     String route;
     String time;
     Integer seats;
     Integer total_fare;
-
-//  constructor ------>
-
-    methods(String name, String route, String time, Integer seats, Integer fare) {
+    //  constructor ------>
+    booking_system(String name, String route, String time, Integer seats, Integer fare) {
         this.customer_name = name;
         this.route = route;
         this.seats = seats;
         this.time = time;
         this.total_fare = fare;
-    }
 }
-
-//  1. View Bus Schedules
-
-class view_buses_Schedules(){
+//  1. View Bus Schedules method
+    void view_buses_Schedules(){
 
         // Incomplete --------->
 
@@ -184,7 +171,7 @@ class display_info(){
         String cus_name = sc.nextLine();
         if (data.containsKey(cus_name) == true){
             System.out.println("hehe");
-        } 
+        }
 }
 
 
