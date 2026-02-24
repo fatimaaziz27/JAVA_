@@ -182,7 +182,14 @@ class booking_system extends data{
         else{
             System.out.println("Invalid ID");
         }
-
+        System.out.println();
+        System.out.println(" ======  Your booking details  ======\n"
+        +"ID: "+ booking_id
+        +" | Name: "+ cus_name
+        +" | Route: "+ this.route
+        +" | Time: "+ this.time
+        +" | Fare: "+ this.total_fare
+        +" | Seats: "+ seat_num);
     }
 
 //  3. Cancel Booking
