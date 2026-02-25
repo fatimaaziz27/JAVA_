@@ -1,4 +1,6 @@
 import java.util.*;
+
+import javax.print.DocFlavor.STRING;
 class main{
 
 
@@ -97,9 +99,15 @@ class main{
 
     class data{
     HashMap<String,booking_system> bus_schedules = new HashMap<>();
-    HashMap<String,booking_system> routes = new HashMap<>();
+    HashMap<Integer,booking_system> routes = new HashMap<>();
     HashMap<String,booking_system> customer_details = new HashMap<>();
+
+    routes.put(ID_i, new booking_system(route_i,time_i,fare_i));
+    routes.put(ID_j, new booking_system(route_j,time_j,fare_j));
+    routes.put(ID_k, new booking_system(route_k,time_k,fare_k));
+
     }
+
     class booking_system extends data{
 
     //  Attributes ------>
@@ -109,22 +117,52 @@ class main{
     String time;
     Integer seats;
     Integer total_fare;
-    Integer ID;
+
+    Integer ID_i = 1;
+    String route_i = "north nazimabad - power house";
+    String time_i = "09:00 AM";
+    Integer fare_i = 500;
+    
+    Integer ID_j = 1;
+    String route_j = "north nazimabad - power house";
+    String time_j= "09:00 AM";
+    Integer fare_j = 500;
+    
+    Integer ID_k = 1;
+    String route_k = "north nazimabad - power house";
+    String time_k = "09:00 AM";
+    Integer fare_k = 500;
+
     //  constructor ------>
 
-    booking_system(String name, String route, String time, Integer seats, Integer fare,Integer ID) {
+    booking_system(String name, String route, String time, Integer seats, Integer fare,Integer ID_i,String route_i,String time_i,Integer fare_i,Integer ID_j,String route_j,String time_j,Integer fare_j,Integer ID_k,String route_k,String time_k,Integer fare_k) {
+        
         this.customer_name = name;
         this.route = route;
         this.seats = seats;
         this.time = time;
         this.total_fare = fare;
-        this.ID = ID;
-    }
+        
+        this.ID_i = ID_i;
+        this.route_i = route_i;
+        this.time_i = time_i;
+        this.fare_i = fare_i;
+        
+        this.ID_j = ID_j;
+        this.route_j = route_j;
+        this.time_j = time_j;
+        this.fare_j = fare_j;
+
+        this.ID_k = ID_k;
+        this.route_k = route_k;
+        this.time_k = time_k;
+        this.fare_k = fare_k;
+        
+        }
 
     //  1. View Bus Schedules method
 
     void view_buses_Schedules(){
-
         System.out.println("--- Available Bus Schedules ---"
                 +"ID: 1 | Route: north nazimabad - power house | Time: 09:00 AM | Fare: 500 | Seats Left: "+this.seats
                 +"ID: 2 | Route: kda - gulshan | Time: 12:00 PM | Fare: 700 | Seats Left: "+this.seats
