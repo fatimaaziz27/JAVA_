@@ -285,14 +285,14 @@ class main{
         // Enter your name to cancel booking: yusra
         // Booking cancelled successfully!
 
-        data d = routes.get(customer_name);
+        data d = customer_details.get(customer_name);
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
 
-        if (details.containsKey(cus_name)){
-            details.remove(customer_name);
-
+        if (d.equals(cus_name)){
+            customer_details.remove(cus_name);
+            System.out.println("Booking cancelled successfully!");
         }
     }
 
@@ -301,10 +301,14 @@ class main{
     void View_My_Bookings(){
 
         // Name: yusra, Route: kda - gulshan, Time: 12:00 PM, Seats: 3, Total Fare: 2100
-
+data d = customer_details.get(customer_name);
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
+
+        if (d.equals(cus_name)){
+            customer_details.remove(cus_name);
+        }
         System.out.println(" ======  Your booking details  ======\n"
                 +" | Name: "+ cus_name
                 +" | Route: "+ this.route
