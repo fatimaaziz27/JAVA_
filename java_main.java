@@ -96,9 +96,9 @@ class main{
 
 
     class data{
-    HashMap<String,booking_system> bus = new HashMap<>();
-    HashMap<String,booking_system> route = new HashMap<>();
-    HashMap<String,booking_system> details = new HashMap<>();
+    HashMap<String,booking_system> bus_schedules = new HashMap<>();
+    HashMap<String,booking_system> routes = new HashMap<>();
+    HashMap<String,booking_system> customer_details = new HashMap<>();
     }
     class booking_system extends data{
 
