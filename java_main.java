@@ -99,7 +99,6 @@ class main{
 
     class data{
     HashMap<String,booking_system> bus_schedules = new HashMap<>();
-    HashMap<String,booking_system> routes = new HashMap<>();
     HashMap<String,booking_system> customer_details = new HashMap<>();
     }
 
@@ -162,6 +161,9 @@ class main{
         
     }
 
+
+
+
     //  1. View Bus Schedules method
 
     void view_buses_Schedules(){
@@ -170,6 +172,10 @@ class main{
                 +"ID: "+ ID_j +" | Route: "+ route_j +" | Time: "+ time_j +" | Fare: "+ fare_j +" | Seats Left: "+this.seats
                 +"ID: "+ ID_k +" | Route: "+ route_k +" | Time: "+ time_k +" | Fare: "+ fare_k +" | Seats Left: "+this.seats);
     }
+
+
+
+
 
     //  2. Book Ticket method
 
@@ -278,6 +284,10 @@ class main{
         }
     }
 
+
+
+
+
     //  3. Cancel Booking
 
     void cancel_booking(){
@@ -295,6 +305,10 @@ class main{
             System.out.println("Booking cancelled successfully!");
         }
     }
+
+
+
+
 
     //  4. View My Bookings
 
@@ -314,16 +328,10 @@ class main{
                 +" | Time: "+ this.time
                 +" | Seats: "+ this.seats
                 +" | Fare: "+ this.total_fare);
-
     }
 }
 }
-// create a method for route:
 
-// for route we can add a method with if/else
-// if id is 1st then this route will be displayed
-// and if id is 2nd then this route will be displayed
-// and then else for 3rd route
 
 
 
