@@ -102,7 +102,7 @@ class main{
     HashMap<Integer,booking_system> routes = new HashMap<>();
     HashMap<String,booking_system> customer_details = new HashMap<>();
 
-    routes.put(ID_i, new booking_system(route_i,time_i,fare_i,seats_i));
+    
     routes.put(ID_j, new booking_system(route_j,time_j,fare_j,seats_j));
     routes.put(ID_k, new booking_system(route_k,time_k,fare_K,seats_k));
 
@@ -215,6 +215,7 @@ class main{
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
 
+        routes.put(cus_name, new data(booking_id,route_i,time_i,total_fare,seat_num));
             }
         
             else if (booking_id == this.ID_j){
@@ -242,6 +243,8 @@ class main{
                 +" | Time: "+ this.time_j
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
+
+            routes.put(cus_name, new data(booking_id,route_j,time_j,total_fare,seat_num));
             }
 
             else if (booking_id == this.ID_k){
@@ -269,11 +272,13 @@ class main{
                 +" | Time: "+ this.time_k
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
+
+            routes.put(cus_name, new data(booking_id,route_k,time_k,total_fare,seat_num));
             }
             else{
             System.out.println("Invalid ID");
 
-            
+
         }
     }
 
