@@ -188,6 +188,7 @@ class main{
             sc.nextLine();
             System.out.println("Enter your name: ");
             String cus_name = sc.nextLine();
+            this.customer_name = cus_name;
 
             System.out.println("Enter number of seats: ");
             Integer seat_num = sc.nextInt();
@@ -204,19 +205,20 @@ class main{
         System.out.println();
         System.out.println(" ======  Your booking details  ======\n"
                 +"ID: "+ booking_id
-                +" | Name: "+ cus_name
+                +" | Name: "+ this.customer_name
                 +" | Route: "+ this.route_i
                 +" | Time: "+ this.time_i
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
 
-        routes.put(cus_name, new data(booking_id,route_i,time_i,total_fare,seat_num));
+        routes.put(customer_name, new data(booking_id,route_i,time_i,total_fare,seat_num));
             }
         
             else if (booking_id == this.ID_j){
                 sc.nextLine();
                 System.out.println("Enter your name: ");
                 String cus_name = sc.nextLine();
+                this.customer_name = cus_name;
 
                 System.out.println("Enter number of seats: ");
                 Integer seat_num = sc.nextInt();
@@ -246,6 +248,7 @@ class main{
                 sc.nextLine();
                 System.out.println("Enter your name: ");
                 String cus_name = sc.nextLine();
+                this.customer_name = cus_name;
 
                 System.out.println("Enter number of seats: ");
                 Integer seat_num = sc.nextInt();
@@ -282,7 +285,7 @@ class main{
         // Enter your name to cancel booking: yusra
         // Booking cancelled successfully!
 
-        data d1 = details.get(customer_name);
+        data d = routes.get(customer_name);
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
