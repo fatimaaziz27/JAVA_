@@ -211,7 +211,7 @@ class main{
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
 
-        routes.put(customer_name, new data(booking_id,route_i,time_i,total_fare,seat_num));
+        customer_details.put(customer_name, new data(booking_id,route_i,time_i,total_fare,seat_num));
             }
         
             else if (booking_id == this.ID_j){
@@ -241,7 +241,7 @@ class main{
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
 
-            routes.put(customer_name, new data(booking_id,route_j,time_j,total_fare,seat_num));
+            customer_details.put(customer_name, new data(booking_id,route_j,time_j,total_fare,seat_num));
             }
 
             else if (booking_id == this.ID_k){
@@ -271,7 +271,7 @@ class main{
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
 
-            routes.put(customer_name, new data(booking_id,route_k,time_k,total_fare,seat_num));
+            customer_details.put(customer_name, new data(booking_id,route_k,time_k,total_fare,seat_num));
             }
             else{
             System.out.println("Invalid ID");
