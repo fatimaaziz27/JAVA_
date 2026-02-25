@@ -99,13 +99,8 @@ class main{
 
     class data{
     HashMap<String,booking_system> bus_schedules = new HashMap<>();
-    HashMap<Integer,booking_system> routes = new HashMap<>();
+    HashMap<String,booking_system> routes = new HashMap<>();
     HashMap<String,booking_system> customer_details = new HashMap<>();
-
-    
-    routes.put(ID_j, new booking_system(route_j,time_j,fare_j,seats_j));
-    routes.put(ID_k, new booking_system(route_k,time_k,fare_K,seats_k));
-
     }
 
     class booking_system extends data{
@@ -277,8 +272,6 @@ class main{
             }
             else{
             System.out.println("Invalid ID");
-
-
         }
     }
 
