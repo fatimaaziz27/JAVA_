@@ -235,13 +235,13 @@ class main{
             System.out.println();
             System.out.println(" ======  Your booking details  ======\n"
                 +"ID: "+ booking_id
-                +" | Name: "+ cus_name
+                +" | Name: "+ this.customer_name
                 +" | Route: "+ this.route_j
                 +" | Time: "+ this.time_j
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
 
-            routes.put(cus_name, new data(booking_id,route_j,time_j,total_fare,seat_num));
+            routes.put(customer_name, new data(booking_id,route_j,time_j,total_fare,seat_num));
             }
 
             else if (booking_id == this.ID_k){
@@ -265,13 +265,13 @@ class main{
             System.out.println();
             System.out.println(" ======  Your booking details  ======\n"
                 +"ID: "+ booking_id
-                +" | Name: "+ cus_name
+                +" | Name: "+ this.customer_name
                 +" | Route: "+ this.route_k
                 +" | Time: "+ this.time_k
                 +" | Fare: "+ this.total_fare
                 +" | Seats: "+ seat_num);
 
-            routes.put(cus_name, new data(booking_id,route_k,time_k,total_fare,seat_num));
+            routes.put(customer_name, new data(booking_id,route_k,time_k,total_fare,seat_num));
             }
             else{
             System.out.println("Invalid ID");
