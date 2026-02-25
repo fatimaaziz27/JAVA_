@@ -205,6 +205,16 @@ class main{
                 }
                 int f1 = this.fare_i*seat_num;
                 this.total_fare += f1;
+
+        System.out.println();
+        System.out.println(" ======  Your booking details  ======\n"
+                +"ID: "+ booking_id
+                +" | Name: "+ cus_name
+                +" | Route: "+ this.route_i
+                +" | Time: "+ this.time_i
+                +" | Fare: "+ this.total_fare
+                +" | Seats: "+ seat_num);
+
             }
         
             else if (booking_id == this.ID_j){
@@ -223,6 +233,15 @@ class main{
                     }
                     int f2 = this.fare_j*seat_num;
                     this.total_fare += f2;
+
+            System.out.println();
+            System.out.println(" ======  Your booking details  ======\n"
+                +"ID: "+ booking_id
+                +" | Name: "+ cus_name
+                +" | Route: "+ this.route_j
+                +" | Time: "+ this.time_j
+                +" | Fare: "+ this.total_fare
+                +" | Seats: "+ seat_num);
             }
 
             else if (booking_id == this.ID_k){
@@ -241,71 +260,22 @@ class main{
                     }
                     int f3 = this.fare_k*seat_num;
                     this.total_fare += f3;
+
+            System.out.println();
+            System.out.println(" ======  Your booking details  ======\n"
+                +"ID: "+ booking_id
+                +" | Name: "+ cus_name
+                +" | Route: "+ this.route_k
+                +" | Time: "+ this.time_k
+                +" | Fare: "+ this.total_fare
+                +" | Seats: "+ seat_num);
             }
             else{
             System.out.println("Invalid ID");
+
+            
         }
-
-
-
-        System.out.println();
-        System.out.println(" ======  Your booking details  ======\n"
-                +"ID: "+ booking_id
-                +" | Name: "+ cus_name
-                +" | Route: "+ this.route
-                +" | Time: "+ this.time
-                +" | Fare: "+ this.total_fare
-                +" | Seats: "+ seat_num);
     }
-        }
-        
-    
-    //     sc.nextLine();
-    //     System.out.println("Enter your name: ");
-    //     String cus_name = sc.nextLine();
-
-    //     System.out.println("Enter number of seats: ");
-    //     Integer seat_num = sc.nextInt();
-
-    //     data d1 = details.get(ID);
-    //     if (details.containsKey(booking_id)){
-    //         if(details.containsKey(seat_num)){
-    //             if(this.seats == seat_num || this.seats >= seat_num)
-    //                 this.seats-=seat_num;
-    //         }
-    //         else{
-    //             System.out.println("only "+this.seats+"left seats");
-    //         }
-    //     }
-    //     else{
-    //         System.out.println("Invalid ID");
-    //     }
-
-    //     if (booking_id == 1){
-    //         int f1 = 500*seat_num;
-    //         this.total_fare+=f1;
-    //     }
-    //     else if(booking_id == 2){
-    //         int f2 = 700*seat_num;
-    //         this.total_fare+=f2;
-    //     }
-    //     else if(booking_id == 3){
-    //         int f3 = 700*seat_num;
-    //         this.total_fare+=f3;
-    //     }
-    //     else{
-    //         System.out.println("Invalid ID");
-    //     }
-
-    //     System.out.println();
-    //     System.out.println(" ======  Your booking details  ======\n"
-    //             +"ID: "+ booking_id
-    //             +" | Name: "+ cus_name
-    //             +" | Route: "+ this.route
-    //             +" | Time: "+ this.time
-    //             +" | Fare: "+ this.total_fare
-    //             +" | Seats: "+ seat_num);
-    // }
 
     //  3. Cancel Booking
 
