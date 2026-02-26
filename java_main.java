@@ -66,39 +66,43 @@ class main{
 
     public static void main(String[] args){
 
-        // //  Enter your choice:
-        // booking_system b = new booking_system();
-        // while (true) {
-        //     Scanner sc = new Scanner(System.in);
-        //     System.out.println("Choose an option");
-        //     Integer op = sc.nextInt();
-        //     switch(op){
-        //         case 1:
-        //             b.view_buses_Schedules();
-        //             break;
-        //         case 2:
-        //             b.ticket_booking();
-        //             break;
-        //         case 3:
-        //             b.cancel_booking();
-        //             break;
-        //         case 4:
-        //             b.View_My_Bookings();
-        //             break;
-        //     }
-        //     Scanner choice = new Scanner(System.in);
-        //     System.out.println("Do you want to continue (yes/no)?");
-        //     if (op.equals("No")){
-        //         System.out.print("====== Exiting Bus Ticket Booking System ======");
-        //         break;
-        //     }
-        // }
+         //  Enter your choice:
+         booking_system b = new booking_system();
+         
+         while (true) {
+             b.view_buses_Schedules();
+             
+             Scanner sc = new Scanner(System.in);
+             System.out.println("Choose an option");
+             Integer op = sc.nextInt();
+
+             switch(op){
+                 case 1:
+                     b.view_buses_Schedules();
+                     break;
+                 case 2:
+                     b.ticket_booking();
+                     break;
+                 case 3:
+                     b.cancel_booking();
+                     break;
+                 case 4:
+                     b.View_My_Bookings();
+                     break;
+             }
+             Scanner choice = new Scanner(System.in);
+             System.out.println("Do you want to continue (yes/no)?");
+             if (op.equals("No")){
+                 System.out.print("====== Exiting Bus Ticket Booking System ======");
+                 break;
+             }
+         }
     }
 }
 
 
-class data{ 
-    
+class data{
+
 
 
     //  Attributes ------>
@@ -157,9 +161,9 @@ class data{
         this.seats_k = seats_k;
 
     }
-    
+
     // Getter ------>
-     
+
     public String getCustomer_name() {
         return customer_name;
     }
@@ -175,7 +179,7 @@ class data{
     public Integer gettotal_fare() {
         return total_fare;
     }
-    
+
     public Integer getID_i(){
         return ID_i;
     }
@@ -226,7 +230,7 @@ class data{
 }
 
 class booking_system extends data{
-    
+
     HashMap<String,booking_system> customer_details = new HashMap<>();
 
     booking_system(String name, Integer seats_k,Integer seats_j
@@ -235,7 +239,7 @@ class booking_system extends data{
             ,Integer ID_j,String route_j,String time_j
             ,Integer fare_j,Integer ID_k,String route_k
             ,String time_k,Integer fare_k ){
-        
+
 super(name,seats_k,seats_j,seats_i,fare,ID_i,route_i,
         time_i,fare_i,ID_j,route_j,time_j,fare_j,
         ID_k,route_k,time_k,fare_k);
@@ -248,7 +252,7 @@ super(name,seats_k,seats_j,seats_i,fare,ID_i,route_i,
                 +"ID: "+ ID_j +" | Route: "+ route_j +" | Time: "+ time_j +" | Fare: "+ fare_j +" | Seats Left: "+this.seats
                 +"ID: "+ ID_k +" | Route: "+ route_k +" | Time: "+ time_k +" | Fare: "+ fare_k +" | Seats Left: "+this.seats);
     }
-    
+
     //  2. Book Ticket method
 
     void ticket_booking(){
@@ -356,10 +360,6 @@ super(name,seats_k,seats_j,seats_i,fare,ID_i,route_i,
         }
     }
 
-
-
-
-
     //  3. Cancel Booking
 
     void cancel_booking(){
@@ -377,10 +377,6 @@ super(name,seats_k,seats_j,seats_i,fare,ID_i,route_i,
             System.out.println("Booking cancelled successfully!");
         }
     }
-
-
-
-
 
     //  4. View My Bookings
 
