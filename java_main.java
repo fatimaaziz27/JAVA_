@@ -65,36 +65,36 @@ class main{
     public static void main(String[] args){
 
          //  Enter your choice:
-         booking_system b = new booking_system();
+            booking_system b = new booking_system();
 
-         while (true) {
-             b.view_buses_Schedules();
+            while (true) {
+                b.view_buses_Schedules();
 
-             Scanner sc = new Scanner(System.in);
-             System.out.println("Choose an option");
-             Integer op = sc.nextInt();
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Choose an option");
+                Integer op = sc.nextInt();
 
-             switch(op){
-                 case 1:
-                     b.view_buses_Schedules();
-                     break;
-                 case 2:
-                     b.ticket_booking();
-                     break;
-                 case 3:
-                     b.cancel_booking();
-                     break;
-                 case 4:
-                     b.View_My_Bookings();
-                     break;
-             }
-             Scanner choice = new Scanner(System.in);
-             System.out.println("Do you want to continue (yes/no)?");
-             if (op.equals("No")){
-                 System.out.print("====== Exiting Bus Ticket Booking System ======");
-                 break;
-             }
-         }
+                switch(op){
+                    case 1:
+                        b.view_buses_Schedules();
+                        break;
+                    case 2:
+                        b.ticket_booking();
+                        break;
+                    case 3:
+                        b.cancel_booking();
+                        break;
+                    case 4:
+                        b.View_My_Bookings();
+                        break;
+                }
+                Scanner choice = new Scanner(System.in);
+                System.out.println("Do you want to continue (yes/no)?");
+                if (op.equals("No")){
+                    System.out.print("====== Exiting Bus Ticket Booking System ======");
+                    break;
+                }
+            }
     }
 }
 
