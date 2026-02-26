@@ -94,15 +94,12 @@ class main{
         //     }
         // }
     }
-    }
+}
 
 
-    class data{
-    HashMap<String,booking_system> bus_schedules = new HashMap<>();
-    HashMap<String,booking_system> customer_details = new HashMap<>();
-    }
+class data{ 
+    
 
-    class booking_system extends data{
 
     //  Attributes ------>
 
@@ -132,21 +129,21 @@ class main{
 
     //  constructor ------>
 
-    booking_system(String name, Integer seats_k,Integer seats_j
-        ,Integer seats_i, Integer fare,Integer ID_i
-        ,String route_i,String time_i,Integer fare_i
-        ,Integer ID_j,String route_j,String time_j
-        ,Integer fare_j,Integer ID_k,String route_k
-        ,String time_k,Integer fare_k ){
-        
+    data(String name, Integer seats_k,Integer seats_j
+            ,Integer seats_i, Integer fare,Integer ID_i
+            ,String route_i,String time_i,Integer fare_i
+            ,Integer ID_j,String route_j,String time_j
+            ,Integer fare_j,Integer ID_k,String route_k
+            ,String time_k,Integer fare_k ){
+
         this.customer_name = name;
-        
+
         this.ID_i = ID_i;
         this.route_i = route_i;
         this.time_i = time_i;
         this.fare_i = fare_i;
         this.seats_i = seats_i;
-        
+
         this.ID_j = ID_j;
         this.route_j = route_j;
         this.time_j = time_j;
@@ -158,12 +155,91 @@ class main{
         this.time_k = time_k;
         this.fare_k = fare_k;
         this.seats_k = seats_k;
-        
+
+    }
+    
+    // Getter ------>
+     
+    public String getCustomer_name() {
+        return customer_name;
+    }
+    public String getRoute(){
+        return route;
+    }
+    public String getTime() {
+        return time;
+    }
+    public Integer getseats(){
+        return seats;
+    }
+    public Integer gettotal_fare() {
+        return total_fare;
+    }
+    
+    public Integer getID_i(){
+        return ID_i;
+    }
+    public String getRoute_i() {
+        return route_i;
+    }
+    public String getTime_i(){
+        return time_i;
+    }
+    public Integer getfare_i() {
+        return fare_i;
+    }
+    public Integer getseats_i(){
+        return seats_i;
     }
 
+    public Integer getID_j(){
+        return ID_j;
+    }
+    public String getRoute_j() {
+        return route_j;
+    }
+    public String getTime_j(){
+        return time_j;
+    }
+    public Integer getfare_j() {
+        return fare_j;
+    }
+    public Integer getseats_j(){
+        return seats_j;
+    }
 
+    public Integer getID_k(){
+        return ID_k;
+    }
+    public String getRoute_k() {
+        return route_k;
+    }
+    public String getTime_k(){
+        return time_k;
+    }
+    public Integer getfare_k() {
+        return fare_k;
+    }
+    public Integer getseats_k(){
+        return seats_k;
+    }
+}
 
+class booking_system extends data{
+    
+    HashMap<String,booking_system> customer_details = new HashMap<>();
 
+    booking_system(String name, Integer seats_k,Integer seats_j
+            ,Integer seats_i, Integer fare,Integer ID_i
+            ,String route_i,String time_i,Integer fare_i
+            ,Integer ID_j,String route_j,String time_j
+            ,Integer fare_j,Integer ID_k,String route_k
+            ,String time_k,Integer fare_k ){
+        
+super(name,seats_k,seats_j,seats_i,fare,ID_i,route_i,
+        time_i,fare_i,ID_j,route_j,time_j,fare_j,
+        ID_k,route_k,time_k,fare_k);
+    }
     //  1. View Bus Schedules method
 
     void view_buses_Schedules(){
@@ -172,19 +248,15 @@ class main{
                 +"ID: "+ ID_j +" | Route: "+ route_j +" | Time: "+ time_j +" | Fare: "+ fare_j +" | Seats Left: "+this.seats
                 +"ID: "+ ID_k +" | Route: "+ route_k +" | Time: "+ time_k +" | Fare: "+ fare_k +" | Seats Left: "+this.seats);
     }
-
-
-
-
-
+    
     //  2. Book Ticket method
 
     void ticket_booking(){
 
-    // Enter Bus ID to book: 2
-    // Enter your name: yusra
-    // Enter number of seats: 3
-    // Booking successful! Total Fare: 2100
+        // Enter Bus ID to book: 2
+        // Enter your name: yusra
+        // Enter number of seats: 3
+        // Booking successful! Total Fare: 2100
 
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Bus ID: ");
@@ -198,88 +270,88 @@ class main{
 
             System.out.println("Enter number of seats: ");
             Integer seat_num = sc.nextInt();
-            
+
             if (seat_num <= this.seats_i){
-                    this.seats_i-=seat_num;
-                }
-                else{
-                    System.out.println("only "+this.seats_i+" seats left.");
-                }
-                int f1 = this.fare_i*seat_num;
-                this.total_fare += f1;
-
-        System.out.println();
-        System.out.println(" ======  Your booking details  ======\n"
-                +"ID: "+ booking_id
-                +" | Name: "+ this.customer_name
-                +" | Route: "+ this.route_i
-                +" | Time: "+ this.time_i
-                +" | Fare: "+ this.total_fare
-                +" | Seats: "+ seat_num);
-
-        customer_details.put(customer_name, new data(booking_id,route_i,time_i,total_fare,seat_num));
-            }
-        
-            else if (booking_id == this.ID_j){
-                sc.nextLine();
-                System.out.println("Enter your name: ");
-                String cus_name = sc.nextLine();
-                this.customer_name = cus_name;
-
-                System.out.println("Enter number of seats: ");
-                Integer seat_num = sc.nextInt();
-                
-                if (seat_num <= this.seats_j){
-                        this.seats_j-=seat_num;
-                    }
-                    else{
-                        System.out.println("only "+this.seats_j+" seats left.");
-                    }
-                    int f2 = this.fare_j*seat_num;
-                    this.total_fare += f2;
-
-            System.out.println();
-            System.out.println(" ======  Your booking details  ======\n"
-                +"ID: "+ booking_id
-                +" | Name: "+ this.customer_name
-                +" | Route: "+ this.route_j
-                +" | Time: "+ this.time_j
-                +" | Fare: "+ this.total_fare
-                +" | Seats: "+ seat_num);
-
-            customer_details.put(customer_name, new data(booking_id,route_j,time_j,total_fare,seat_num));
-            }
-
-            else if (booking_id == this.ID_k){
-                sc.nextLine();
-                System.out.println("Enter your name: ");
-                String cus_name = sc.nextLine();
-                this.customer_name = cus_name;
-
-                System.out.println("Enter number of seats: ");
-                Integer seat_num = sc.nextInt();
-                
-                if (seat_num <= this.seats_k){
-                        this.seats_k-=seat_num;
-                    }
-                    else{
-                        System.out.println("only "+this.seats_k+" seats left.");
-                    }
-                    int f3 = this.fare_k*seat_num;
-                    this.total_fare += f3;
-
-            System.out.println();
-            System.out.println(" ======  Your booking details  ======\n"
-                +"ID: "+ booking_id
-                +" | Name: "+ this.customer_name
-                +" | Route: "+ this.route_k
-                +" | Time: "+ this.time_k
-                +" | Fare: "+ this.total_fare
-                +" | Seats: "+ seat_num);
-
-            customer_details.put(customer_name, new data(booking_id,route_k,time_k,total_fare,seat_num));
+                this.seats_i-=seat_num;
             }
             else{
+                System.out.println("only "+this.seats_i+" seats left.");
+            }
+            int f1 = this.fare_i*seat_num;
+            this.total_fare += f1;
+
+            System.out.println();
+            System.out.println(" ======  Your booking details  ======\n"
+                    +"ID: "+ this.ID_i
+                    +" | Name: "+ this.customer_name
+                    +" | Route: "+ this.route_i
+                    +" | Time: "+ this.time_i
+                    +" | Fare: "+ this.total_fare
+                    +" | Seats: "+ seat_num);
+
+            customer_details.put(customer_name, new data(ID_i,route_i,time_i,total_fare,seat_num));
+        }
+
+        else if (booking_id == this.ID_j){
+            sc.nextLine();
+            System.out.println("Enter your name: ");
+            String cus_name = sc.nextLine();
+            this.customer_name = cus_name;
+
+            System.out.println("Enter number of seats: ");
+            Integer seat_num = sc.nextInt();
+
+            if (seat_num <= this.seats_j){
+                this.seats_j-=seat_num;
+            }
+            else{
+                System.out.println("only "+this.seats_j+" seats left.");
+            }
+            int f2 = this.fare_j*seat_num;
+            this.total_fare += f2;
+
+            System.out.println();
+            System.out.println(" ======  Your booking details  ======\n"
+                    +"ID: "+ booking_id
+                    +" | Name: "+ this.customer_name
+                    +" | Route: "+ this.route_j
+                    +" | Time: "+ this.time_j
+                    +" | Fare: "+ this.total_fare
+                    +" | Seats: "+ seat_num);
+
+            customer_details.put(customer_name, new data(booking_id,route_j,time_j,total_fare,seat_num));
+        }
+
+        else if (booking_id == this.ID_k){
+            sc.nextLine();
+            System.out.println("Enter your name: ");
+            String cus_name = sc.nextLine();
+            this.customer_name = cus_name;
+
+            System.out.println("Enter number of seats: ");
+            Integer seat_num = sc.nextInt();
+
+            if (seat_num <= this.seats_k){
+                this.seats_k-=seat_num;
+            }
+            else{
+                System.out.println("only "+this.seats_k+" seats left.");
+            }
+            int f3 = this.fare_k*seat_num;
+            this.total_fare += f3;
+
+            System.out.println();
+            System.out.println(" ======  Your booking details  ======\n"
+                    +"ID: "+ booking_id
+                    +" | Name: "+ this.customer_name
+                    +" | Route: "+ this.route_k
+                    +" | Time: "+ this.time_k
+                    +" | Fare: "+ this.total_fare
+                    +" | Seats: "+ seat_num);
+
+            customer_details.put(customer_name, new data(booking_id,route_k,time_k,total_fare,seat_num));
+        }
+        else{
             System.out.println("Invalid ID");
         }
     }
@@ -315,7 +387,7 @@ class main{
     void View_My_Bookings(){
 
         // Name: yusra, Route: kda - gulshan, Time: 12:00 PM, Seats: 3, Total Fare: 2100
-    data d1 = customer_details.get(customer_name);
+        data d1 = customer_details.get(customer_name);
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter your name: ");
         String cus_name = sc.nextLine();
@@ -323,16 +395,11 @@ class main{
         if (d1.equals(cus_name)){
             customer_details.get(cus_name);
             System.out.println(" ======  Your booking details  ======\n"
-                +" | Name: "+ cus_name
-                +" | Route: "+ this.route
-                +" | Time: "+ this.time
-                +" | Seats: "+ this.seats
-                +" | Fare: "+ this.total_fare);
+                    +" | Name: "+ cus_name
+                    +" | Route: "+ this.route
+                    +" | Time: "+ this.time
+                    +" | Seats: "+ this.seats
+                    +" | Fare: "+ this.total_fare);
+        }
     }
 }
-}
-
-
-
-
-
