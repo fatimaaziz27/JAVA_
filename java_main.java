@@ -1,6 +1,4 @@
 import java.util.*;
-
-import javax.print.DocFlavor.STRING;
 class main{
 
 
@@ -68,10 +66,10 @@ class main{
 
          //  Enter your choice:
          booking_system b = new booking_system();
-         
+
          while (true) {
              b.view_buses_Schedules();
-             
+
              Scanner sc = new Scanner(System.in);
              System.out.println("Choose an option");
              Integer op = sc.nextInt();
