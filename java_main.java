@@ -85,70 +85,17 @@ class contact_management_system{
 }
 
 
-class data extends booking_system {
 
-    //  Attributes ------>
+class data{
 
-    Integer id;
-    String route;
-    String time;
-    Integer seats;
-    Integer total_fare;
-
-    data(Integer id, String route, String time, Integer total_fare, Integer seats){
-
-        this.id = id;
-        this.route=route;
-        this.time=time;
-        this.seats=seats;
-        this.total_fare=total_fare;
-    }
-
-    // Getter ------>
-
-    public Integer getid() {
-        return id;
-    }
-    public String getRoute(){
-        return route;
-    }
-    public String getTime() {
-        return time;
-    }
-    public Integer getseats(){
-        return seats;
-    }
-    public Integer gettotal_fare() {
-        return total_fare;
-    }
+HashMap<String,contact_book> details = new HashMap<>();
 
 }
 
-class booking_system{
-    HashMap<String,booking_system> customer_details = new HashMap<>();
-    Integer ID_i = 1;
-    String route_i = "north nazimabad - power house";
-    String time_i = "09:00 AM";
-    Integer fare_i = 500;
-    Integer seats_i = 50;
+class contact_book extends data{
 
-    Integer ID_j = 2;
-    String route_j = "kda - gulshan";
-    String time_j= "12:00 PM";
-    Integer fare_j = 700;
-    Integer seats_j = 30;
-
-    Integer ID_k = 3;
-    String route_k = "ayesha manzil - bahria";
-    String time_k = "05:00 PM";
-    Integer fare_k = 600;
-    Integer seats_k = 60;
-
-    int total_fare;
-
-
-    //  1. View Bus Schedules method
-
+// 1. Add Contact
+    
     void Add_Contact(){
 
         // Enter Name: Ali
@@ -168,12 +115,11 @@ class booking_system{
 
 // Adding details in hashmap ----->
 
-        details.put(name,new account(acc_num,name,pin,passkey,balance));
+        details.put(name,new data(sell_no));
+
         System.out.println("Contact Added Successfully!");
 
 }
-
-    //  2. Book Ticket method
 
     void ticket_booking(){
 
