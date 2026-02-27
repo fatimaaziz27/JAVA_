@@ -149,12 +149,29 @@ class booking_system{
 
     //  1. View Bus Schedules method
 
-    void view_buses_Schedules(){
-        System.out.println("--- Available Bus Schedules ---"
-                +"\nID: " + ID_i + " | Route: " + route_i + " | Time: "+ time_i +" | Fare: "+ fare_i +" | Seats Left: "+seats_i
-                +"\nID: "+ ID_j +" | Route: "+ route_j +" | Time: "+ time_j +" | Fare: "+ fare_j +" | Seats Left: "+seats_j
-                +"\nID: "+ ID_k +" | Route: "+ route_k +" | Time: "+ time_k +" | Fare: "+ fare_k +" | Seats Left: "+seats_k);
-    }
+    void Add_Contact(){
+
+        // Enter Name: Ali
+        // Enter Phone: 03001234567
+        // Contact Added Successfully!
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Name: ");
+        String name = sc.nextLine();
+
+        System.out.println("Enter Phone number: ");
+        String sell_no = sc.nextLine();
+        
+        if (sell_no.length()!=11){
+            System.out.println("Number must contain 11 digits");
+        }
+
+// Adding details in hashmap ----->
+
+        details.put(name,new account(acc_num,name,pin,passkey,balance));
+        System.out.println("Contact Added Successfully!");
+
+}
 
     //  2. Book Ticket method
 
