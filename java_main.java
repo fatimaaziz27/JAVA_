@@ -49,7 +49,9 @@ class contact_management_system{
     public static void main(String[] args){
 
         //  Enter your choice:
-        booking_system b = new booking_system();
+
+
+        // make obj
 
         while (true) {
             System.out.println();
@@ -121,13 +123,12 @@ class contact_book extends data{
 
 }
 
+// 2. View Contacts
+
     void ticket_booking(){
 
-        // Enter Bus ID to book: 2
-        // Enter your name: yusra
-        // Enter number of seats: 3
-        // Booking successful! Total Fare: 2100
-
+        
+        
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Bus ID: ");
         Integer booking_id = sc.nextInt();
