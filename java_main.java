@@ -49,9 +49,7 @@ class contact_management_system{
     public static void main(String[] args){
 
         //  Enter your choice:
-
-
-        // make obj
+        contact_book c1= new contact_book();
 
         while (true) {
             System.out.println();
@@ -63,18 +61,16 @@ class contact_management_system{
 
             switch(op){
                 case 1:
-                    
+                    c1.Add_Contact();
                     break;
                 case 2:
-                    
+                    c1.View_Contacts();
                     break;
                 case 3:
-                    
+                    c1.Search_Contact();
                     break;
-                case 4:
-                    
-                    break;
-            }
+                }
+
             System.out.println();
             System.out.println("Do you want to continue (yes/no)?");
             String choice = sc.nextLine().toLowerCase();
@@ -131,7 +127,8 @@ class contact_book extends data{
     // Name: Ali, Phone: 03001234567
     // Name: Sara, Phone: 03111234567
 
-        
+    System.out.println(details);
+
     }
 
     // 3. Search Contact
@@ -142,13 +139,13 @@ class contact_book extends data{
         // Enter name to search: Ali
         // Found: Ali - 03001234567
 
-
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter name to search: ");
         String name = sc.nextLine();
         if (details.containsKey(name)){
             details.remove(name);
-            System.out.println("Found: ");
+            System.out.println("Found: "+details.get(name));
         }
+
     }
 }
