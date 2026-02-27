@@ -82,12 +82,9 @@ class contact_management_system{
     }
 }
 
-
-
 class data{
 
 HashMap<String,contact_book> details = new HashMap<>();
-
 }
 
 class contact_book extends data{
@@ -109,13 +106,15 @@ class contact_book extends data{
         
         if (sell_no.length()!=11){
             System.out.println("Number must contain 11 digits");
+            System.out.println("Try Again");
+            
         }
-
+        else{
+            System.out.println("Contact Added Successfully!");
+        }
 // Adding details in hashmap ----->
 
-        details.put(name,new data(sell_no));
-
-        System.out.println("Contact Added Successfully!");
+        // details.put(name,new contact_book(sell_no));
 
 }
 
@@ -143,8 +142,10 @@ class contact_book extends data{
         System.out.println("Enter name to search: ");
         String name = sc.nextLine();
         if (details.containsKey(name)){
-            details.remove(name);
             System.out.println("Found: "+details.get(name));
+        }
+        else{
+            System.out.println("Not Found");
         }
 
     }
