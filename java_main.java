@@ -148,7 +148,7 @@ class contact_book extends data{
         String name = sc.nextLine();
         if (details.containsKey(name)){
             details.remove(name);
-            System.out.println("Found: "+);
+            System.out.println("Found: ");
         }
     }
 }
