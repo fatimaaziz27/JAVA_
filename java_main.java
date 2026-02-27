@@ -68,8 +68,10 @@ class main{
         booking_system b = new booking_system();
 
         while (true) {
+            System.out.println();
+            System.out.println("1. View Bus Schedules\n2. Book Ticket\n3. Cancel Booking\n4. View My Bookings");
             Scanner sc = new Scanner(System.in);
-            System.out.println("Choose an option");
+            System.out.println("Choose an option: ");
             Integer op = sc.nextInt();
             sc.nextLine();
 
@@ -87,6 +89,7 @@ class main{
                     b.View_My_Bookings();
                     break;
             }
+            System.out.println();
             System.out.println("Do you want to continue (yes/no)?");
             String choice = sc.nextLine().toLowerCase();
             if (choice.equals("no")){
@@ -202,7 +205,7 @@ class booking_system{
             this.total_fare += f1;
 
             System.out.println();
-            System.out.println(" ======  Your booking details  ======\n"
+            System.out.println(" ==============  Your booking details  ==============\n"
                     +"ID: "+ this.ID_i
                     +" | Name: "+ customer_name
                     +" | Route: "+ this.route_i
@@ -264,7 +267,7 @@ class booking_system{
             this.total_fare += f3;
 
             System.out.println();
-            System.out.println(" ======  Your booking details  ======\n"
+            System.out.println(" ==============  Your booking details  ==============\n"
                     +"ID: "+ booking_id
                     +" | Name: "+ customer_name
                     +" | Route: "+ this.route_k
@@ -313,6 +316,9 @@ class booking_system{
                     +" | Time: "+ d1.time
                     +" | Seats: "+ d1.seats
                     +" | Fare: "+ d1.total_fare);
+        }
+        else{
+            System.out.println("No booking available or wrong name");
         }
     }
 }
