@@ -84,13 +84,16 @@ class contact_management_system{
 
 class data{
 
-    HashMap<String,String> details = new HashMap<>();
+    HashMap<String,contact_book> details = new HashMap<>();
+
     String name;
     String contact_number;
+
     data(String name,String contact_number){
         this.name = name;
         this.contact_number = contact_number;
     }
+    
     public String getname() {
         return name;
     }
@@ -100,8 +103,9 @@ class data{
 }
 
 class contact_book extends data{
-// 1. Add Contact
     
+// 1. Add Contact
+
     void Add_Contact(){
 
         // Enter Name: Ali
