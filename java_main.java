@@ -84,11 +84,22 @@ class contact_management_system{
 
 class data{
 
-HashMap<String,contact_book> details = new HashMap<>();
+    HashMap<String,String> details = new HashMap<>();
+    String name;
+    String contact_number;
+    data(String name,String contact_number){
+        this.name = name;
+        this.contact_number = contact_number;
+    }
+    public String getname() {
+        return name;
+    }
+    public String getcontact_number(){
+        return contact_number;
+    }
 }
 
 class contact_book extends data{
-
 // 1. Add Contact
     
     void Add_Contact(){
@@ -99,23 +110,28 @@ class contact_book extends data{
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Name: ");
-        String name = sc.nextLine();
+        String n = sc.nextLine();
+        this.name = n;
 
         System.out.println("Enter Phone number: ");
         String sell_no = sc.nextLine();
-        
+
         if (sell_no.length()!=11){
             System.out.println("Number must contain 11 digits");
             System.out.println("Try Again");
             
         }
         else{
+            this.contact_number = sell_no;
             System.out.println("Contact Added Successfully!");
         }
+
 // Adding details in hashmap ----->
 
-        // details.put(name,new contact_book(sell_no));
+        details.put(name,new contact_book(contact_number));
 
+        this.name = "null";
+        this.contact_number = "null";
 }
 
 // 2. View Contacts
