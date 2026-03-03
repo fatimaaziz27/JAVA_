@@ -1,5 +1,42 @@
 import java.util.*;
 
+
+
+
+
+
+import java.util.*;
+
+abstract class shape{
+    abstract void cal_area();
+}
+class circle extends shape{
+    void cal_area(){
+        System.out.println("Circle Area");
+    }
+}
+class rectangle extends shape{
+    void cal_area(){
+        System.out.println("Rectangle Area");
+    }
+}
+class main{
+    public static void main(String[] args){
+        circle c1 = new circle();
+        c1.cal_area();
+        rectangle r1 = new rectangle();
+        r1.cal_area();
+    }
+}
+
+
+
+
+
+
+
+
+
 // 1. Add Contact
 // 2. View Contacts
 // 3. Search Contact
