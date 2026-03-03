@@ -81,10 +81,18 @@ class contact_management_system{
         }
     }
 }
+class contact{
+    String name;
+    String number;
+    contact(String name, String num){
+        this.name=name;
+        this.number=num;
+    }
+}
 
 class contact_book{
-    HashMap<String,String> details = new HashMap<>();
-    
+    HashMap<String,contact> details = new HashMap<>();
+
 // 1. Add Contact
 
     void Add_Contact(){
@@ -96,7 +104,7 @@ class contact_book{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Name: ");
         String n = sc.nextLine();
-        
+
         System.out.println("Enter Phone number: ");
         String sell_no = sc.nextLine();
 
@@ -105,10 +113,11 @@ class contact_book{
             System.out.println("Try Again");
         }
         else{
+            details.put(n,new contact(n,sell_no));
             System.out.println("Contact Added Successfully!");
         }
 // Adding details in hashmap ----->
-        details.put(n,sell_no);
+//        details.put(n,sell_no);
     }
 
 // 2. View Contacts
@@ -117,25 +126,32 @@ class contact_book{
         // Saved Contacts:
         // Name: Ali, Phone: 03001234567
         // Name: Sara, Phone: 03111234567
-        
-        for (int i : ){
-            
-            
+
+        for (String i : this.details.keySet() ){
+            contact c = details.get(i);
+            System.out.printf("Contact Name: %s \nContact Number: %s",c.name,c.number);
+            System.out.println();
+            System.out.println("---------------------------------------");
+
+
+
         }
     }
     // 3. Search Contact
 
     void Search_Contact(){
-
         // Choose option: 3
         // Enter name to search: Ali
         // Found: Ali - 03001234567
-
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter name to search: ");
         String name = sc.nextLine();
         if (details.containsKey(name)){
-            System.out.println("Found: "+details.get(name));
+            System.out.println("Found: ");
+            contact c = details.get(name);
+            System.out.printf("Contact Name: %s \nContact Number: %s",c.name,c.number);
+            System.out.println();
+            System.out.println("---------------------------------------");
         }
         else{
             System.out.println("Not Found");
