@@ -69,7 +69,7 @@ class contact_management_system{
                 case 3:
                     c1.Search_Contact();
                     break;
-                }
+            }
 
             System.out.println();
             System.out.println("Do you want to continue (yes/no)?");
@@ -82,27 +82,8 @@ class contact_management_system{
     }
 }
 
-class data{
-
-    HashMap<String,contact_book> details = new HashMap<>();
-
-    String name;
-    String contact_number;
-
-    data(String name,String contact_number){
-        this.name = name;
-        this.contact_number = contact_number;
-    }
-    
-    public String getname() {
-        return name;
-    }
-    public String getcontact_number(){
-        return contact_number;
-    }
-}
-
-class contact_book extends data{
+class contact_book{
+    HashMap<String,String> details = new HashMap<>();
     
 // 1. Add Contact
 
@@ -115,41 +96,33 @@ class contact_book extends data{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Name: ");
         String n = sc.nextLine();
-        this.name = n;
-
+        
         System.out.println("Enter Phone number: ");
         String sell_no = sc.nextLine();
 
         if (sell_no.length()!=11){
             System.out.println("Number must contain 11 digits");
             System.out.println("Try Again");
-            
         }
         else{
-            this.contact_number = sell_no;
             System.out.println("Contact Added Successfully!");
         }
-
 // Adding details in hashmap ----->
-
-        details.put(name,new contact_book(contact_number));
-
-        this.name = "null";
-        this.contact_number = "null";
-}
+        details.put(n,sell_no);
+    }
 
 // 2. View Contacts
 
     void View_Contacts(){
-
-    // Saved Contacts:
-    // Name: Ali, Phone: 03001234567
-    // Name: Sara, Phone: 03111234567
-
-    System.out.println(details);
-
+        // Saved Contacts:
+        // Name: Ali, Phone: 03001234567
+        // Name: Sara, Phone: 03111234567
+        
+        for (int i : ){
+            
+            
+        }
     }
-
     // 3. Search Contact
 
     void Search_Contact(){
@@ -171,4 +144,4 @@ class contact_book extends data{
     }
 }
 
-// incomplete 
+// incomplete
