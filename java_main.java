@@ -4,6 +4,36 @@ import java.util.*;
 
 
 
+abstract class payment{
+    abstract void process_payment();
+}
+class credit_card_payment extends payment{
+    void process_payment(){
+        System.out.println("By Credit Card");
+    }
+}
+class paypal_payment extends payment{
+    void process_payment(){
+        System.out.println("By Paypal");
+    }
+}
+class main{
+    public static void main(String[] args){
+    credit_card_payment c1 = new credit_card_payment();
+    c1.process_payment();
+    paypal_payment p1 = new paypal_payment();
+    p1.process_payment();
+    }
+}
+
+
+
+
+
+
+
+
+
 
 import java.util.*;
 
