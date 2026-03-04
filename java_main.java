@@ -1,16 +1,10 @@
 // Functions and Exception Handling
 
-// 1. Safe Addition
-// Write a Java function `safe_add(x: float, y: float) -> float` that adds two numbers, and returns a custom
-// error message if the numbers are not valid floats.
-
 
 
 // 2. Safe Subtraction
 // Write a Java function `safe_subtract(x: float, y: float) -> float` that subtracts two numbers and handles
 // the case where the subtraction results in a negative number.
-
-
 
 // 4. Handling Invalid Input
 // Write a Java function `parse_input(value: str) -> int` that takes a string input and converts it to an
@@ -20,129 +14,7 @@
 // Write a Java function `add_positive_numbers(x: int, y: int) -> int` that adds two numbers but only if both
 // are positive. If either number is negative, raise a custom error: `"Both numbers must be positive"`.
 
-import java.util.*;
-class E{
-    public static void main(String[]args) {
-        Scanner sc = new Scanner(System.in);
 
-//        try{
-//            System.out.println("Enter a number: ");
-//            int a = sc.nextInt();
-//            System.out.println("Enter a number: ");
-//            int b = sc.nextInt();
-//            int c = a/b;
-//            System.out.println("Result:" + c);
-//        }
-//        catch (ArithmeticException e){
-//            System.out.println("Can not divide by zero");
-//        }
-//        catch(InputMismatchException e){
-//            System.out.println("invalid input");
-//        }
-        
-        while (true) {
-            try {
-                System.out.println("Enter a number: ");
-                int a = sc.nextInt();
-                sc.nextLine();
-                System.out.println("Enter a number: ");
-                int b = sc.nextInt();
-                int c = a / b;
-                System.out.println("Result:" + c);
-                break;
-            } catch (ArithmeticException e) {
-                System.out.println("Can not divide by zero");
-            } catch (InputMismatchException e) {
-                System.out.println("invalid input");
-                sc.nextLine();
-            }
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import java.util.*;
-
-
-
-
-
-abstract class payment{
-    abstract void process_payment();
-}
-class credit_card_payment extends payment{
-    void process_payment(){
-        System.out.println("By Credit Card");
-    }
-}
-class paypal_payment extends payment{
-    void process_payment(){
-        System.out.println("By Paypal");
-    }
-}
-class main{
-    public static void main(String[] args){
-    credit_card_payment c1 = new credit_card_payment();
-    c1.process_payment();
-    paypal_payment p1 = new paypal_payment();
-    p1.process_payment();
-    }
-}
-
-
-
-
-
-
-
-
-
-
-import java.util.*;
-
-abstract class shape{
-    abstract void cal_area();
-}
-class circle extends shape{
-    void cal_area(){
-        System.out.println("Circle Area");
-    }
-}
-class rectangle extends shape{
-    void cal_area(){
-        System.out.println("Rectangle Area");
-    }
-}
-class main{
-    public static void main(String[] args){
-        circle c1 = new circle();
-        c1.cal_area();
-        rectangle r1 = new rectangle();
-        r1.cal_area();
-    }
-}
 
 
 
@@ -197,6 +69,7 @@ class main{
 // Choose option: 4
 // Exiting...
 
+import java.util.*;
 class contact_management_system{
     public static void main(String[] args){
 
@@ -312,4 +185,3 @@ class contact_book{
     }
 }
 
-// incomplete
