@@ -21,23 +21,13 @@ import java.util.*;
         Scanner sc = new Scanner(System.in);
         try{
             System.out.println("Enter a number: ");
-            float a = sc.nextInt();
-            System.out.println("Enter a number: ");
-            float b = sc.nextInt();
-            float c = a + b;
+            Integer a = sc.nextInt();
+            Integer c = Integer.parseInt("9");
             System.out.println("Result:" + c);
         }
         catch (Exception e){
             System.out.println("invalid input");
         }
-
-        int x =Integer.parseInt("9");
-        double c = Double.parseDouble("5");
-        int b = Integer.parseInt("444",16);
-
-        System.out.println(x);
-        System.out.println(c);
-        System.out.println(b);
     }
 }
 
