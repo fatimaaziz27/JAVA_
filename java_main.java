@@ -21,8 +21,8 @@ import java.util.*;
         Scanner sc = new Scanner(System.in);
         try{
             System.out.println("Enter a number: ");
-            Integer a = sc.nextInt();
-            Integer c = Integer.parseInt("9");
+            String a = sc.nextLine();
+            Integer c = Integer.parseInt(a);
             System.out.println("Result:" + c);
         }
         catch (Exception e){
