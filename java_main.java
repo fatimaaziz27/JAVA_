@@ -25,6 +25,45 @@
 // Write a Java function `divide_numbers(x: float, y: float) -> float` that divides `x` by `y`. If `y` is zero, it
 // should return `"Cannot divide by zero"`.
 
+while (true) {
+            try {
+                System.out.println("Enter a number: ");
+                float x = sc.nextInt();
+                sc.nextLine();
+                System.out.println("Enter a number: ");
+                float y = sc.nextInt();
+                float z = x / y;
+                System.out.println("Result:" + z);
+                break;
+            } catch (ArithmeticException e) {
+                System.out.println("Can not divide by zero"+e.getMessage());
+            } catch (InputMismatchException e) {
+                System.out.println("invalid input");
+                sc.nextLine();
+            }
+        }
+
+        //       OR
+
+        while (true) {
+            try {
+                System.out.println("Enter a number: ");
+                Integer x = sc.nextInt();
+                sc.nextLine();
+                System.out.println("Enter a number: ");
+                Integer y = sc.nextInt();
+                Integer z = x / y;
+                System.out.println("Result:" + z);
+                break;
+            } catch (ArithmeticException e) {
+                System.out.println("Can not divide by zero"+e.getMessage());
+            } catch (InputMismatchException e) {
+                System.out.println("invalid input");
+                sc.nextLine();
+            }
+        }
+
+
 // 4. Handling Invalid Input
 // Write a Java function `parse_input(value: str) -> int` that takes a string input and converts it to an
 // integer. If the conversion fails, return the message `"Invalid input"`.
