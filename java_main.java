@@ -52,23 +52,26 @@ class E{
 //        catch(InputMismatchException e){
 //            System.out.println("invalid input");
 //        }
+        
         while (true) {
             try {
                 System.out.println("Enter a number: ");
                 int a = sc.nextInt();
+                sc.nextLine();
                 System.out.println("Enter a number: ");
                 int b = sc.nextInt();
                 int c = a / b;
                 System.out.println("Result:" + c);
+                break;
             } catch (ArithmeticException e) {
                 System.out.println("Can not divide by zero");
             } catch (InputMismatchException e) {
                 System.out.println("invalid input");
+                sc.nextLine();
             }
         }
     }
 }
-
 
 
 
