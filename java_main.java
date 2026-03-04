@@ -1,3 +1,98 @@
+// Functions and Exception Handling
+
+// 1. Safe Addition
+// Write a Java function `safe_add(x: float, y: float) -> float` that adds two numbers, and returns a custom
+// error message if the numbers are not valid floats.
+
+//    Scanner sc = new Scanner(System.in);
+//        try{
+//            System.out.println("Enter a number: ");
+//            float a = sc.nextInt();
+//            System.out.println("Enter a number: ");
+//            float b = sc.nextInt();
+//            float c = a + b;
+//            System.out.println("Result:" + c);
+//        }
+//        catch (Exception e){
+//            System.out.println("invalid input");
+//        }
+
+// 2. Safe Subtraction
+// Write a Java function `safe_subtract(x: float, y: float) -> float` that subtracts two numbers and handles
+// the case where the subtraction results in a negative number.
+
+// 3. Check for Division by Zero
+// Write a Java function `divide_numbers(x: float, y: float) -> float` that divides `x` by `y`. If `y` is zero, it
+// should return `"Cannot divide by zero"`.
+
+// 4. Handling Invalid Input
+// Write a Java function `parse_input(value: str) -> int` that takes a string input and converts it to an
+// integer. If the conversion fails, return the message `"Invalid input"`.
+
+// 5. Negative Numbers Handling
+// Write a Java function `add_positive_numbers(x: int, y: int) -> int` that adds two numbers but only if both
+// are positive. If either number is negative, raise a custom error: `"Both numbers must be positive"`.
+
+import java.util.*;
+class E{
+    public static void main(String[]args) {
+        Scanner sc = new Scanner(System.in);
+
+//        try{
+//            System.out.println("Enter a number: ");
+//            int a = sc.nextInt();
+//            System.out.println("Enter a number: ");
+//            int b = sc.nextInt();
+//            int c = a/b;
+//            System.out.println("Result:" + c);
+//        }
+//        catch (ArithmeticException e){
+//            System.out.println("Can not divide by zero");
+//        }
+//        catch(InputMismatchException e){
+//            System.out.println("invalid input");
+//        }
+        while (true) {
+            try {
+                System.out.println("Enter a number: ");
+                int a = sc.nextInt();
+                System.out.println("Enter a number: ");
+                int b = sc.nextInt();
+                int c = a / b;
+                System.out.println("Result:" + c);
+            } catch (ArithmeticException e) {
+                System.out.println("Can not divide by zero");
+            } catch (InputMismatchException e) {
+                System.out.println("invalid input");
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import java.util.*;
 
 
