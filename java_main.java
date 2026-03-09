@@ -125,6 +125,11 @@ class booking_system{
 //                ==== Employee Payroll System ====
 
 // 1. Add Employee
+// 2. View Employees
+// 3. Calculate Salary
+
+
+// 1. Add Employee
     void add_employee(){
 
 // Choose option: 1
@@ -184,5 +189,16 @@ class booking_system{
 
     }
 
+//               ===== Tech Company Meeting Scheduler =====
 
+// 1. View Meeting Rooms
+// 2. Schedule Meeting
+// 3. View My Meetings
+// 4. Cancel Meeting
+// 5. Exit
+
+// 1. View Meeting Rooms
+    void View_Meeting_Rooms(){
+
+    }
 }
