@@ -255,8 +255,17 @@ System.out.println("Meeting Scheduled Successfully!");
 // Room: Alpha
 // Date: 20-03-2026
 // Time: 03:00 PM
-// Cancel Meeting
-// Choose option: 4
+
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter Employee Name: ");
+        S name = sc.nextInt();
+
+        System.out.println("------ Your Meetings ------"+
+            "Employee: "+
+            "Meeting: "+
+            "Room: "+
+            "Date: "+
+            "Time: ");
 
     }
 
