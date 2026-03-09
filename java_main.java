@@ -185,6 +185,7 @@ class booking_system{
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Employee ID: ");
         Integer id = sc.nextInt();
+        System.out.println("===== Employee Removed =====");
 
     }
 }
