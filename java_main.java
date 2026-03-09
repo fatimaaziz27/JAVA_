@@ -6,11 +6,11 @@ import java.util.*;
 // Employee Payroll System       /         // Tech Company Meeting Scheduler
 
 // Features
+
 // Add Employee
 // View Employees
 // Calculate Salary
 // Remove Employee
-// Expected Output
 
 
 // Features
@@ -19,8 +19,6 @@ import java.util.*;
 // Schedule Meeting
 // View My Meetings
 // Cancel Meeting
-
-
 
 
 
@@ -124,9 +122,9 @@ import java.util.*;
 
 class booking_system{
 
-    HashMap<String,booking_system> customer_details = new HashMap<>();
-
 // 1. Add Employee
+
+    void add_employee(){
 
 // Choose option: 1
 
@@ -135,9 +133,6 @@ class booking_system{
 // Enter Monthly Salary: 60000
 
 // Employee added successfully
-
-
-    void add_employee(){
 
         Scanner sc = new Scanner(System.in);
         
@@ -152,9 +147,6 @@ class booking_system{
         
         System.out.println("=========== Employee added successfully ===========");
     }
-
-
-
 
 // View Employees
 
@@ -189,6 +181,10 @@ class booking_system{
 // Remove Employee
 
     void Remove_Employee(){
+
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter Employee ID: ");
+        Integer id = sc.nextInt();
 
     }
 }
