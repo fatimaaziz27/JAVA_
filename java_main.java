@@ -189,6 +189,9 @@ class booking_system{
 
     }
 
+
+
+
 //               ===== Tech Company Meeting Scheduler =====
 
 // 1. View Meeting Rooms
@@ -201,7 +204,11 @@ class booking_system{
 // 1. View Meeting Rooms
     void View_Meeting_Rooms(){
 
-// ------ Available Meeting Rooms ------
+        System.out.println("------ Available Meeting Rooms ------"+
+        "\nID: 1 | Room: Alpha | Capacity: 10"+
+        "\nID: 2 | Room: Beta | Capacity: 6"+
+        "\nID: 3 | Room: Gamma | Capacity: 20");
+
 // ID: 1 | Room: Alpha | Capacity: 10
 // ID: 2 | Room: Beta | Capacity: 6
 // ID: 3 | Room: Gamma | Capacity: 20
