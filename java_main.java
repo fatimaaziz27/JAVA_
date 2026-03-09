@@ -209,6 +209,13 @@ class booking_system{
 
 // 2. Schedule Meeting
     void Schedule_Meeting(){
+// Enter Room ID: 1
+// Enter Employee Name: Fatima
+// Enter Meeting Title: Project Discussion
+// Enter Date: 20-03-2026
+// Enter Time: 03:00 PM
+
+// Meeting Scheduled Successfully!
 
     }
 
@@ -226,13 +233,6 @@ class booking_system{
 // Schedule Meeting
 // Choose option: 2
 
-// Enter Room ID: 1
-// Enter Employee Name: Fatima
-// Enter Meeting Title: Project Discussion
-// Enter Date: 20-03-2026
-// Enter Time: 03:00 PM
-
-// Meeting Scheduled Successfully!
 
 // View My Meetings
 // Choose option: 3
