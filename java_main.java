@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-// Employee Payroll System
+// Employee Payroll System       /         // Tech Company Meeting Scheduler
 
 // Features
 // Add Employee
@@ -12,11 +12,41 @@ import java.util.*;
 // Remove Employee
 // Expected Output
 
+
+// Features
+
+// View Meeting Rooms / Managers
+// Schedule Meeting
+// View My Meetings
+// Cancel Meeting
+
+
+
+
+
+
+
 // ==== Employee Payroll System ====
 
 // 1. Add Employee
 // 2. View Employees
 // 3. Calculate Salary
+
+
+
+// ===== Tech Company Meeting Scheduler =====
+
+// 1. View Meeting Rooms
+// 2. Schedule Meeting
+// 3. View My Meetings
+// 4. Cancel Meeting
+// 5. Exit
+
+
+
+
+
+// options ----->
 
 // Choose option: 1
 
@@ -37,25 +67,6 @@ import java.util.*;
 
 
 
-// Tech Company Meeting Scheduler
-
-// Features
-
-// View Meeting Rooms / Managers
-// Schedule Meeting
-// View My Meetings
-// Cancel Meeting
-
-// Expected Output
-// Main Menu
-// ===== Tech Company Meeting Scheduler =====
-
-// 1. View Meeting Rooms
-// 2. Schedule Meeting
-// 3. View My Meetings
-// 4. Cancel Meeting
-// 5. Exit
-
 // Choose option:
 // View Meeting Rooms
 // Choose option: 1
@@ -65,6 +76,7 @@ import java.util.*;
 // ID: 1 | Room: Alpha | Capacity: 10
 // ID: 2 | Room: Beta | Capacity: 6
 // ID: 3 | Room: Gamma | Capacity: 20
+
 // Schedule Meeting
 // Choose option: 2
 
@@ -75,6 +87,7 @@ import java.util.*;
 // Enter Time: 03:00 PM
 
 // Meeting Scheduled Successfully!
+
 // View My Meetings
 // Choose option: 3
 
@@ -93,7 +106,6 @@ import java.util.*;
 // Enter Employee Name: Fatima
 
 // Meeting cancelled successfully!
-// Extra Features (good practice)
 
 // You can also add:
 
@@ -107,15 +119,68 @@ import java.util.*;
 // 12:00 PM - Available
 // 03:00 PM - Project Discussion
 
-// This project is great practice for Java because you can use:
-
-// Classes (Meeting, Room, Employee)
-
-// HashMap or ArrayList
-
-// Time/date validation
-
-// Menu-based system
+// === Code Execution Successful ===
 
 
+class booking_system{
 
+    HashMap<String,booking_system> customer_details = new HashMap<>();
+
+// 1. Add Employee
+
+// Choose option: 1
+
+// Enter Employee ID: 501
+// Enter Name: Ali
+// Enter Monthly Salary: 60000
+
+// Employee added successfully
+
+
+    void add_employee(){
+
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter Employee ID: ");
+        Integer id = sc.nextInt();
+        
+        System.out.println("Enter Name: ");
+        String name = sc.nextLine();
+        
+        System.out.println("Enter Monthly Salary: ");
+        Integer salary = sc.nextInt();
+        
+        System.out.println("=========== Employee added successfully ===========");
+    }
+
+
+
+
+// View Employees
+
+    void View_Employees(){
+
+// Enter Employee ID: 501
+
+// Name: Ali
+// Monthly Salary: 60000
+// Annual Salary: 720000
+
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter Employee ID: ");
+        Integer id = sc.nextInt();
+    }
+
+// Calculate Salary
+
+    void Calculate_Salary(){
+
+    }
+
+
+// Remove Employee
+
+    void Remove_Employee(){
+
+    }
+}
