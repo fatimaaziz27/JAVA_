@@ -126,6 +126,11 @@ class data{
     private String name;
     private Integer salary;
     private Integer Capacity;
+    private Integer Room_ID;
+    private String title;
+    private Integer date;
+    private Integer time;
+
 }
 
 class Tech_Company_Management_System{
