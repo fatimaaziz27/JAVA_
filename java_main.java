@@ -171,8 +171,9 @@ class data{
 }
 
 class Tech_Company_Management_System extends data{
-    
+
     HashMap<String,Tech_Company_Management_System> d1 = new HashMap<>();
+    
 //                ==== Employee Payroll System ====
 
 // 1. Add Employee
