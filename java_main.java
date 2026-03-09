@@ -272,6 +272,10 @@ System.out.println("Meeting Scheduled Successfully!");
 // 4. Cancel Meeting
     void Cancel_Meeting(){
 
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter Employee Name: ");
+        String name = sc.nextLine();
+        System.out.println("------ Your Meetings ------");
 // Enter Employee Name: Fatima
 // Meeting cancelled successfully!
 
