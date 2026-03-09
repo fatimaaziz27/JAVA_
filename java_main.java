@@ -98,7 +98,7 @@ import java.util.*;
 // === Code Execution Successful ===
 
 
-class booking_system{
+class Tech_Company_Management_System{
 
 //                ==== Employee Payroll System ====
 
