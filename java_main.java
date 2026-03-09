@@ -1,6 +1,4 @@
 // This java file is only for practice
-
-
 import java.util.*;
 
 // Employee Payroll System       /         // Tech Company Meeting Scheduler
@@ -47,17 +45,14 @@ import java.util.*;
 // options ----->
 
 // Choose option: 1
-
 // Enter Employee ID: 501
 // Enter Name: Ali
 // Enter Monthly Salary: 60000
-
 // Employee added successfully
 
+
 // Salary Calculation
-
 // Enter Employee ID: 501
-
 // Name: Ali
 // Monthly Salary: 60000
 // Annual Salary: 720000
