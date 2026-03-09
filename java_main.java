@@ -130,6 +130,43 @@ class data{
     private String title;
     private Integer date;
     private Integer time;
+    
+    data (Integer ID,String name,Integer salary,Integer Capacity,Integer Room_ID,String title,Integer date,Integer time){
+        this.ID = ID;
+        this.name = name;
+        this.salary = salary;
+        this.Capacity = Capacity;
+        this.Room_ID = Room_ID;
+        this.title = title;
+        this.date = date;
+        this.time = time;
+    }
+    // Getter ------>
+
+    public Integer getID() {
+        return ID;
+    }
+    public String getname(){
+        return name;
+    }
+    public Integer getsalary() {
+        return salary;
+    }
+    public Integer getCapacity(){
+        return Capacity;
+    }
+    public Integer getRoom_ID() {
+        return Room_ID;
+    }
+    public String gettitle(){
+        return title;
+    }
+    public Integer getdate(){
+        return date;
+    }
+    public Integer gettime(){
+        return time;
+    }
 
 }
 
