@@ -121,6 +121,13 @@ class main{
     }
 }
 
+class data{
+    private Integer ID;
+    private String name;
+    private Integer salary;
+    private Integer Capacity;
+}
+
 class Tech_Company_Management_System{
 
 //                ==== Employee Payroll System ====
