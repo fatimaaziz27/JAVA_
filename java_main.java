@@ -258,7 +258,7 @@ System.out.println("Meeting Scheduled Successfully!");
 
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Employee Name: ");
-        S name = sc.nextInt();
+        String name = sc.nextLine();
 
         System.out.println("------ Your Meetings ------"+
             "Employee: "+
