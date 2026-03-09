@@ -122,16 +122,15 @@ import java.util.*;
 
 class booking_system{
 
-// 1. Add Employee
+//                ==== Employee Payroll System ====
 
+// 1. Add Employee
     void add_employee(){
 
 // Choose option: 1
-
 // Enter Employee ID: 501
 // Enter Name: Ali
 // Enter Monthly Salary: 60000
-
 // Employee added successfully
 
         Scanner sc = new Scanner(System.in);
@@ -149,7 +148,6 @@ class booking_system{
     }
 
 // View Employees
-
     void View_Employees(){
 
 // Enter Employee ID: 501
@@ -163,7 +161,6 @@ class booking_system{
     }
 
 // Calculate Salary
-
     void Calculate_Salary(){
 
 // Enter Employee ID: 501
@@ -177,9 +174,7 @@ class booking_system{
 
     }
 
-
 // Remove Employee
-
     void Remove_Employee(){
 
         Scanner sc = new Scanner (System.in);
@@ -188,4 +183,6 @@ class booking_system{
         System.out.println("===== Employee Removed =====");
 
     }
+
+
 }
