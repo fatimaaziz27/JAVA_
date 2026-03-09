@@ -106,20 +106,18 @@ class main{
         obj.View_Employees();
         // 3. Calculate Salary
         obj.Calculate_Salary();
+        // 4. Remove_Employee
+        obj.Remove_Employee();
+        
         // 1. View Meeting Rooms
         obj.View_Meeting_Rooms();
         // 2. Schedule Meeting
         obj.Schedule_Meeting();
-// 3. View My Meetings
+        // 3. View My Meetings
         obj.View_My_Meetings();
-// 4. Cancel Meeting
+        // 4. Cancel Meeting
         obj.Cancel_Meeting();
-// 5. Remove_Employee
-        obj.Remove_Employee();
-
-
-
-
+        
     }
 }
 
@@ -130,7 +128,7 @@ class Tech_Company_Management_System{
 // 1. Add Employee
 // 2. View Employees
 // 3. Calculate Salary
-
+// 4. Remove_Employee
 
 // 1. Add Employee
     void add_employee(){
