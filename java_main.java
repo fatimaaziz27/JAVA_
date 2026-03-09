@@ -197,8 +197,72 @@ class booking_system{
 // 4. Cancel Meeting
 // 5. Exit
 
+
 // 1. View Meeting Rooms
     void View_Meeting_Rooms(){
+// ------ Available Meeting Rooms ------
+// ID: 1 | Room: Alpha | Capacity: 10
+// ID: 2 | Room: Beta | Capacity: 6
+// ID: 3 | Room: Gamma | Capacity: 20
+
+    }
+
+// 2. Schedule Meeting
+    void Schedule_Meeting(){
+
+    }
+
+// 3. View My Meetings
+    void View_My_Meetings(){
+
+    }
+
+// 4. Cancel Meeting
+    void Cancel_Meeting(){
 
     }
 }
+
+// Schedule Meeting
+// Choose option: 2
+
+// Enter Room ID: 1
+// Enter Employee Name: Fatima
+// Enter Meeting Title: Project Discussion
+// Enter Date: 20-03-2026
+// Enter Time: 03:00 PM
+
+// Meeting Scheduled Successfully!
+
+// View My Meetings
+// Choose option: 3
+
+// Enter Employee Name: Fatima
+
+// ------ Your Meetings ------
+
+// Employee: Fatima
+// Meeting: Project Discussion
+// Room: Alpha
+// Date: 20-03-2026
+// Time: 03:00 PM
+// Cancel Meeting
+// Choose option: 4
+
+// Enter Employee Name: Fatima
+
+// Meeting cancelled successfully!
+
+// You can also add:
+
+// Prevent double booking
+// Room already booked at this time.
+// Please choose another time slot.
+// Show meeting schedule
+// Room Alpha Schedule
+
+// 10:00 AM - Team Standup
+// 12:00 PM - Available
+// 03:00 PM - Project Discussion
+
+// === Code Execution Successful ===
