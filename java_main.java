@@ -218,6 +218,13 @@ class booking_system{
 // 2. Schedule Meeting
     void Schedule_Meeting(){
 
+// Enter Room ID: 1
+// Enter Employee Name: Fatima
+// Enter Meeting Title: Project Discussion
+// Enter Date: 20-03-2026
+// Enter Time: 03:00 PM
+// Meeting Scheduled Successfully!
+
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Room ID: ");
         Integer id = sc.nextInt();
@@ -233,14 +240,7 @@ class booking_system{
 
         System.out.println("Enter Date: ");
         Integer id = sc.nextInt();
-
-// Enter Room ID: 1
-// Enter Employee Name: Fatima
-// Enter Meeting Title: Project Discussion
-// Enter Date: 20-03-2026
-// Enter Time: 03:00 PM
-// Meeting Scheduled Successfully!
-
+        
 System.out.println("Meeting Scheduled Successfully!");
 
     }
