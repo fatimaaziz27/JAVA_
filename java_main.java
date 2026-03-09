@@ -108,7 +108,7 @@ class main{
         obj.Calculate_Salary();
         // 4. Remove_Employee
         obj.Remove_Employee();
-        
+
         // 1. View Meeting Rooms
         obj.View_Meeting_Rooms();
         // 2. Schedule Meeting
@@ -143,6 +143,7 @@ class Tech_Company_Management_System{
         
         System.out.println("Enter Employee ID: ");
         Integer id = sc.nextInt();
+        sc.nextLine();
         
         System.out.println("Enter Name: ");
         String name = sc.nextLine();
@@ -229,6 +230,7 @@ class Tech_Company_Management_System{
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Room ID: ");
         Integer id = sc.nextInt();
+        sc.nextLine();
 
         System.out.println("Enter Employee Name: ");
         String name = sc.nextLine();
