@@ -230,16 +230,16 @@ class booking_system{
         Integer id = sc.nextInt();
 
         System.out.println("Enter Employee Name: ");
-        Integer name = sc.nextInt();
+        String name = sc.nextLine();
 
         System.out.println("Enter Meeting Title: ");
-        Integer title = sc.nextInt();
+        String title = sc.nextLine();
 
         System.out.println("Enter Date: ");
         Integer date = sc.nextInt();
 
-        System.out.println("Enter Date: ");
-        Integer id = sc.nextInt();
+        System.out.println("Enter Time: ");
+        Integer time = sc.nextInt();
 
 System.out.println("Meeting Scheduled Successfully!");
 
