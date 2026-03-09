@@ -161,7 +161,6 @@ class booking_system{
     void View_Employees(){
 
 // Enter Employee ID: 501
-
 // Name: Ali
 // Monthly Salary: 60000
 // Annual Salary: 720000
@@ -174,6 +173,15 @@ class booking_system{
 // Calculate Salary
 
     void Calculate_Salary(){
+
+// Enter Employee ID: 501
+// Name: Ali
+// Monthly Salary: 60000
+// Annual Salary: 720000
+
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter Employee ID: ");
+        Integer id = sc.nextInt();
 
     }
 
