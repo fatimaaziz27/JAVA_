@@ -96,7 +96,32 @@ import java.util.*;
 // Meeting cancelled successfully!
 
 // === Code Execution Successful ===
+class main{
+    public static void main(String[]args){
+        Tech_Company_Management_System obj = new Tech_Company_Management_System();
+        
+        // 1. Add Employee
+        obj.add_employee();
+        // 2. View Employees
+        obj.View_Employees();
+        // 3. Calculate Salary
+        obj.Calculate_Salary();
+        // 1. View Meeting Rooms
+        obj.View_Meeting_Rooms();
+        // 2. Schedule Meeting
+        obj.Schedule_Meeting();
+// 3. View My Meetings
+        obj.View_My_Meetings();
+// 4. Cancel Meeting
+        obj.Cancel_Meeting();
+// 5. Remove_Employee
+        obj.Remove_Employee();
 
+
+
+
+    }
+}
 
 class Tech_Company_Management_System{
 
@@ -176,7 +201,7 @@ class Tech_Company_Management_System{
 // 2. Schedule Meeting
 // 3. View My Meetings
 // 4. Cancel Meeting
-// 5. Exit
+
 
 
 // 1. View Meeting Rooms
