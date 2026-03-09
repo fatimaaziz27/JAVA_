@@ -200,6 +200,7 @@ class booking_system{
 
 // 1. View Meeting Rooms
     void View_Meeting_Rooms(){
+        
 // ------ Available Meeting Rooms ------
 // ID: 1 | Room: Alpha | Capacity: 10
 // ID: 2 | Room: Beta | Capacity: 6
@@ -209,18 +210,28 @@ class booking_system{
 
 // 2. Schedule Meeting
     void Schedule_Meeting(){
+
 // Enter Room ID: 1
 // Enter Employee Name: Fatima
 // Enter Meeting Title: Project Discussion
 // Enter Date: 20-03-2026
 // Enter Time: 03:00 PM
-
 // Meeting Scheduled Successfully!
 
     }
 
 // 3. View My Meetings
     void View_My_Meetings(){
+
+// Enter Employee Name: Fatima
+// ------ Your Meetings ------
+// Employee: Fatima
+// Meeting: Project Discussion
+// Room: Alpha
+// Date: 20-03-2026
+// Time: 03:00 PM
+// Cancel Meeting
+// Choose option: 4
 
     }
 
@@ -230,24 +241,6 @@ class booking_system{
     }
 }
 
-// Schedule Meeting
-// Choose option: 2
-
-
-// View My Meetings
-// Choose option: 3
-
-// Enter Employee Name: Fatima
-
-// ------ Your Meetings ------
-
-// Employee: Fatima
-// Meeting: Project Discussion
-// Room: Alpha
-// Date: 20-03-2026
-// Time: 03:00 PM
-// Cancel Meeting
-// Choose option: 4
 
 // Enter Employee Name: Fatima
 
