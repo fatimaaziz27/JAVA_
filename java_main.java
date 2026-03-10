@@ -175,17 +175,17 @@ class Tech_Company_Management_System{
     
     Integer ID_i = 1;
     String room_i = "Alpha";
-    Integer fare_i = 500;
+    Integer Capacity_i = 500;
     
     // for room two
     Integer ID_j = 2;
     String room_j = "Beta";
-    Integer fare_j = 6;
+    Integer Capacity_j = 6;
 
     // for room three
     Integer ID_k = 3;
     String route_k = "Gamma";
-    Integer fare_k = 20;
+    Integer Capacity_k = 20;
 
 //                ==== Employee Payroll System ====
 
@@ -271,7 +271,7 @@ class Tech_Company_Management_System{
     void View_Meeting_Rooms(){
 
         System.out.println("------ Available Meeting Rooms ------"+
-        "\nID: 1 | Room: Alpha | Capacity: 10"+
+        "\nID: "+ ID_i +" | Room: "+ room_i +" | Capacity: "++
         "\nID: 2 | Room: Beta | Capacity: 6"+
         "\nID: 3 | Room: Gamma | Capacity: 20");
 
