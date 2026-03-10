@@ -202,6 +202,37 @@ class Tech_Company_Management_System{
 // Enter Name: Ali
 // Enter Monthly Salary: 60000
 // Employee added successfully
+        
+        while (true) {
+            try {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter Employee ID: ");
+        Integer id = sc.nextInt();
+        sc.nextLine();
+        
+        System.out.println("Enter Name: ");
+        String name = sc.nextLine();
+        
+        System.out.println("Enter Monthly Salary: ");
+        Integer salary = sc.nextInt();
+        
+        System.out.println("=========== Employee added successfully ===========");
+
+                break;
+            }
+        catch (InputMismatchException e) {
+            System.out.println("invalid input");
+            sc.nextLine();
+        }
+        }
+    }
+}
+
+
+
+
+
 
         Scanner sc = new Scanner(System.in);
         
