@@ -121,7 +121,7 @@ class main{
     }
 }
 
-class data{
+class data extends Tech_Company_Management_System{
     private Integer ID;
     private String name;
     private Integer salary;
@@ -167,10 +167,9 @@ class data{
     public Integer gettime(){
         return time;
     }
-
 }
 
-class Tech_Company_Management_System extends data{
+class Tech_Company_Management_System{
 
     HashMap<String,Tech_Company_Management_System> d1 = new HashMap<>();
     
