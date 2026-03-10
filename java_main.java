@@ -173,10 +173,6 @@ class Tech_Company_Management_System{
 
     HashMap<String,Tech_Company_Management_System> d1 = new HashMap<>();
     
-
-// ID: 1 | Room: Alpha | Capacity: 10
-// ID: 2 | Room: Beta | Capacity: 6
-// ID: 3 | Room: Gamma | Capacity: 20
     Integer ID_i = 1;
     String room_i = "Alpha";
     Integer fare_i = 500;
