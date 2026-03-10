@@ -171,7 +171,7 @@ class data extends Tech_Company_Management_System{
 
 class Tech_Company_Management_System{
 
-    HashMap<String,Tech_Company_Management_System> d1 = new HashMap<>();
+    HashMap<String,Tech_Company_Management_System> employee_data = new HashMap<>();
     
     Integer ID_i = 1;
     String room_i = "Alpha";
@@ -207,16 +207,16 @@ class Tech_Company_Management_System{
             try {
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Enter Employee ID: ");
-        Integer id = sc.nextInt();
-        sc.nextLine();
+        Double ID = Math.random();
+        Double employee_ID = ID;
         
         System.out.println("Enter Name: ");
         String name = sc.nextLine();
         
         System.out.println("Enter Monthly Salary: ");
         Integer salary = sc.nextInt();
-        
+        d1.put(name, new data(employee_ID,salary));
+            this.total_fare=0;
         System.out.println("=========== Employee added successfully ===========");
 
                 break;
