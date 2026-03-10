@@ -215,39 +215,18 @@ class Tech_Company_Management_System{
         
         System.out.println("Enter Monthly Salary: ");
         Integer salary = sc.nextInt();
-        d1.put(name, new data(employee_ID,salary));
-            this.total_fare=0;
+        
+        employee_data.put(name, new Tech_Company_Management_System(employee_ID,salary));
+
         System.out.println("=========== Employee added successfully ===========");
 
                 break;
             }
         catch (InputMismatchException e) {
             System.out.println("invalid input");
-            sc.nextLine();
-        }
         }
     }
 }
-
-
-
-
-
-
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("Enter Employee ID: ");
-        Integer id = sc.nextInt();
-        sc.nextLine();
-        
-        System.out.println("Enter Name: ");
-        String name = sc.nextLine();
-        
-        System.out.println("Enter Monthly Salary: ");
-        Integer salary = sc.nextInt();
-        
-        System.out.println("=========== Employee added successfully ===========");
-    }
 
 // View Employees
     void View_Employees(){
