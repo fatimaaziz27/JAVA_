@@ -205,22 +205,23 @@ class Tech_Company_Management_System{
         
         while (true) {
             try {
-        Scanner sc = new Scanner(System.in);
-        
-        Double ID = Math.random();
-        Double employee_ID = ID;
-        
-        System.out.println("Enter Name: ");
-        String name = sc.nextLine();
-        
-        System.out.println("Enter Monthly Salary: ");
-        Integer salary = sc.nextInt();
-        
-        employee_data.put(name, new Tech_Company_Management_System(employee_ID,salary));
+                Scanner sc = new Scanner(System.in);
+                
+                Double ID = Math.random();
+                Double employee_ID = ID;
+                System.out.println("Employee ID: "+employee_ID);
+                
+                System.out.println("Enter Name: ");
+                String name = sc.nextLine();
+                
+                System.out.println("Enter Monthly Salary: ");
+                Integer salary = sc.nextInt();
+                
+                employee_data.put(name, new Tech_Company_Management_System(employee_ID,salary));
 
-        System.out.println("=========== Employee added successfully ===========");
+                System.out.println("=========== Employee added successfully ===========");
 
-                break;
+            break;
             }
         catch (InputMismatchException e) {
             System.out.println("invalid input");
