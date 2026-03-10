@@ -173,6 +173,24 @@ class Tech_Company_Management_System{
 
     HashMap<String,Tech_Company_Management_System> d1 = new HashMap<>();
     
+
+// ID: 1 | Room: Alpha | Capacity: 10
+// ID: 2 | Room: Beta | Capacity: 6
+// ID: 3 | Room: Gamma | Capacity: 20
+    Integer ID_i = 1;
+    String room_i = "Alpha";
+    Integer fare_i = 500;
+    
+    // for room two
+    Integer ID_j = 2;
+    String room_j = "Beta";
+    Integer fare_j = 6;
+
+    // for room three
+    Integer ID_k = 3;
+    String route_k = "Gamma";
+    Integer fare_k = 20;
+
 //                ==== Employee Payroll System ====
 
 // 1. Add Employee
