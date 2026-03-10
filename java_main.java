@@ -271,9 +271,9 @@ class Tech_Company_Management_System{
     void View_Meeting_Rooms(){
 
         System.out.println("------ Available Meeting Rooms ------"+
-        "\nID: "+ ID_i +" | Room: "+ room_i +" | Capacity: "++
-        "\nID: 2 | Room: Beta | Capacity: 6"+
-        "\nID: 3 | Room: Gamma | Capacity: 20");
+        "\nID: "+ ID_i +" | Room: "+ room_i +" | Capacity: "+ Capacity_i +
+        "\nID: "+ID_j+" | Room: "+ room_j +" | Capacity: "+ Capacity_j +
+        "\nID: "+ ID_k +" | Room: "+ route_k +" | Capacity: "+ Capacity_k );
 
 // ID: 1 | Room: Alpha | Capacity: 10
 // ID: 2 | Room: Beta | Capacity: 6
