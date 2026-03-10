@@ -347,6 +347,5 @@ System.out.println("Meeting Scheduled Successfully!");
         String name = sc.nextLine();
         System.out.println("Meeting cancelled successfully!");
 
-
-}
+    }
 }
