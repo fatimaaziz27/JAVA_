@@ -216,7 +216,7 @@ class Tech_Company_Management_System{
                 System.out.println("Enter Monthly Salary: ");
                 Integer salary = sc.nextInt();
                 
-                employee_data.put(name, new Tech_Company_Management_System(employee_ID,salary));
+                employee_data.put(name, new Tech_Company_Management_System(employee_ID, salary));
 
                 System.out.println("Employee ID: "+ employee_ID);
                 System.out.println("Employee Name: "+ name);
@@ -246,13 +246,13 @@ class Tech_Company_Management_System{
         Integer id = sc.nextInt();
 
         if (employee_data.containsKey(id) == true) {
-            for (String i : this.employee_data.keySet() ){
-                    employee_data d = employee_data.get(i);
 
-                    System.out.println(
-                            "Employee Info: \nName: " + d.get()
-                                    + "\nMonthly Salary: " + d.get()
-                                    + "\nAnnual Salary: " + d.get());
+            for (String i : this.employee_data.keySet() ){
+            
+                employee_data d = employee_data.get(i);
+                System.out.println("Employee Info: \nName: " + d.name + "\nMonthly Salary: " + d.salary);
+                Integer Annual_Salary = d.get() * 12;
+                System.out.println("Annual Salary: " + Annual_Salary);
             }
         }
         else {
