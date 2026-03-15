@@ -469,10 +469,6 @@ class Tech_Company_Management_System{
         }
     }
 
-
-
-
-
 //         System.out.println("Enter Employee Name: ");
 //         String name = sc.nextLine();
 
