@@ -244,6 +244,20 @@ class Tech_Company_Management_System{
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Employee ID: ");
         Integer id = sc.nextInt();
+
+        if (employee_data.containsKey(id) == true) {
+            for (String i : this.employee_data.keySet() ){
+                    employee_data d = employee_data.get(i);
+
+                    System.out.println(
+                            "Employee Info: \nName: " + d.get()
+                                    + "\nMonthly Salary: " + d.get()
+                                    + "\nAnnual Salary: " + d.get());
+            }
+        }
+        else {
+            System.out.println("Invalid ID");
+        }
     }
 
 // Calculate Salary
