@@ -96,6 +96,7 @@ import java.util.*;
 // Meeting cancelled successfully!
 
 // === Code Execution Successful ===
+
 class main{
     public static void main(String[]args){
         Tech_Company_Management_System obj = new Tech_Company_Management_System();
@@ -287,8 +288,6 @@ class Tech_Company_Management_System{
 
     }
 
-
-
 // Remove Employee
     void Remove_Employee(){
 
@@ -305,6 +304,8 @@ class Tech_Company_Management_System{
         System.out.println("===== Employee Removed =====");
 
     }
+
+
 
 
 
