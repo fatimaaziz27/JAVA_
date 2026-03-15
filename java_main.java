@@ -284,6 +284,7 @@ class Tech_Company_Management_System{
         else {
             System.out.println("Invalid ID");
         }
+
     }
 
 
@@ -294,6 +295,13 @@ class Tech_Company_Management_System{
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter Employee ID: ");
         Integer id = sc.nextInt();
+
+        if (employee_data.containsKey(id) == true) {
+            employee_data.remove(id);
+        }
+        else {
+            System.out.println("Invalid ID");
+        }
         System.out.println("===== Employee Removed =====");
 
     }
