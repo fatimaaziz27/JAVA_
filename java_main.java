@@ -209,7 +209,6 @@ class Tech_Company_Management_System{
                 
                 Double ID = Math.random();
                 Double employee_ID = ID;
-                System.out.println("Employee ID: "+employee_ID);
                 
                 System.out.println("Enter Name: ");
                 String name = sc.nextLine();
@@ -219,9 +218,14 @@ class Tech_Company_Management_System{
                 
                 employee_data.put(name, new Tech_Company_Management_System(employee_ID,salary));
 
+                System.out.println("Employee ID: "+ employee_ID);
+                System.out.println("Employee Name: "+ name);
+                System.out.println("Employee Salary: "+ salary);
+                
                 System.out.println("=========== Employee added successfully ===========");
 
             break;
+
             }
         catch (InputMismatchException e) {
             System.out.println("invalid input");
