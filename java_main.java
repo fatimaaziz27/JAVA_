@@ -171,7 +171,7 @@ class data extends Tech_Company_Management_System{
 
 class Tech_Company_Management_System{
 
-    HashMap<String,Tech_Company_Management_System> employee_data = new HashMap<>();
+    HashMap<Integer,Tech_Company_Management_System> employee_data = new HashMap<>();
     
     Integer ID_i = 1;
     String room_i = "Alpha";
@@ -205,20 +205,20 @@ class Tech_Company_Management_System{
         
         while (true) {
             try {
+                
                 Scanner sc = new Scanner(System.in);
-                
-                Double ID = Math.random();
-                Double employee_ID = ID;
-                
+
+                int id = (int)(Math.random() * 100);
+
                 System.out.println("Enter Name: ");
                 String name = sc.nextLine();
                 
                 System.out.println("Enter Monthly Salary: ");
                 Integer salary = sc.nextInt();
                 
-                employee_data.put(name, new Tech_Company_Management_System(employee_ID, salary));
+                employee_data.put(id, new Tech_Company_Management_System(name, salary));
 
-                System.out.println("Employee ID: "+ employee_ID);
+                System.out.println("Employee ID: "+ id);
                 System.out.println("Employee Name: "+ name);
                 System.out.println("Employee Salary: "+ salary);
                 
@@ -248,11 +248,10 @@ class Tech_Company_Management_System{
         if (employee_data.containsKey(id) == true) {
 
             for (String i : this.employee_data.keySet() ){
-            
+
                 employee_data d = employee_data.get(i);
                 System.out.println("Employee Info: \nName: " + d.name + "\nMonthly Salary: " + d.salary);
-                Integer Annual_Salary = d.get() * 12;
-                System.out.println("Annual Salary: " + Annual_Salary);
+            
             }
         }
         else {
@@ -272,7 +271,22 @@ class Tech_Company_Management_System{
         System.out.println("Enter Employee ID: ");
         Integer id = sc.nextInt();
 
+        if (employee_data.containsKey(id) == true) {
+
+            for (String i : this.employee_data.keySet() ){
+            
+                employee_data d = employee_data.get(i);
+                System.out.println("Employee Info: \nName: " + d.name + "\nMonthly Salary: " + d.salary);
+                Integer Annual_Salary = d.get() * 12;
+                System.out.println("Annual Salary: " + Annual_Salary);
+            }
+        }
+        else {
+            System.out.println("Invalid ID");
+        }
     }
+
+
 
 // Remove Employee
     void Remove_Employee(){
