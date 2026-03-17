@@ -56,7 +56,6 @@ import java.util.*;
 // ID: 2 | Room: Beta | Capacity: 6
 // ID: 3 | Room: Gamma | Capacity: 20
 
-
 // Schedule Meeting
 // Choose option: 2
 // Enter Room ID: 1
