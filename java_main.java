@@ -39,7 +39,6 @@ import java.util.*;
 // Enter Monthly Salary: 60000
 // Employee added successfully
 
-
 // Salary Calculation
 // Enter Employee ID: 501
 // Name: Ali
