@@ -62,7 +62,6 @@ import java.util.*;
 // Enter Time: 03:00 PM
 // Meeting Scheduled Successfully!
 
-
 // View My Meetings
 // Choose option: 3
 // Enter Employee Name: Fatima
