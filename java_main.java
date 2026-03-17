@@ -45,9 +45,6 @@ import java.util.*;
 // Monthly Salary: 60000
 // Annual Salary: 720000
 
-
-
-
 // Choose option:
 // View Meeting Rooms
 // Choose option: 1
